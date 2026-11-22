@@ -13,12 +13,22 @@ from besser.BUML.metamodel.structural import (
 )
 import datetime
 
+# Enumerations
+UserRole: Enumeration = Enumeration(
+    name="UserRole",
+    literals={
+            EnumerationLiteral(name="Member"),
+			EnumerationLiteral(name="Manager")
+    }
+)
+
 # Classes
 HelloWorld = Class(name="HelloWorld")
 TimeService = Class(name="TimeService")
 veryImportantClass = Class(name="veryImportantClass")
 Appointment = Class(name="Appointment")
 Project = Class(name="Project")
+User = Class(name="User")
 
 # HelloWorld class attributes and methods
 HelloWorld_id: Property = Property(name="id", type=IntegerType, visibility="private", is_external_id=True)
@@ -49,6 +59,13 @@ Appointment.attributes={Appointment_description, Appointment_endTime, Appointmen
 Project_name: Property = Property(name="name", type=StringType, visibility="private")
 Project.attributes={Project_name}
 
+# User class attributes and methods
+User_name: Property = Property(name="name", type=StringType, visibility="private")
+User_role: Property = Property(name="role", type=UserRole, visibility="private")
+User_m_editProject: Method = Method(name="editProject", parameters=[Parameter(name='project', type=Project)], type=AnyType, implementation_type=MethodImplementationType.NONE)
+User.attributes={User_name, User_role}
+User.methods={User_m_editProject}
+
 # Relationships
 Project_Appointment: BinaryAssociation = BinaryAssociation(
     name="Project_Appointment",
@@ -57,12 +74,19 @@ Project_Appointment: BinaryAssociation = BinaryAssociation(
         Property(name="appointment", type=Appointment, multiplicity=Multiplicity(0, 9999))
     }
 )
+User_Project: BinaryAssociation = BinaryAssociation(
+    name="User_Project",
+    ends={
+        Property(name="user", type=User, multiplicity=Multiplicity(0, 9999)),
+        Property(name="project", type=Project, multiplicity=Multiplicity(0, 9999))
+    }
+)
 
 # Domain Model
 domain_model = DomainModel(
     name="Class_Diagram",
-    types={HelloWorld, TimeService, veryImportantClass, Appointment, Project},
-    associations={Project_Appointment},
+    types={HelloWorld, TimeService, veryImportantClass, Appointment, Project, User, UserRole},
+    associations={Project_Appointment, User_Project},
     generalizations=set(),
     metadata=None
 )

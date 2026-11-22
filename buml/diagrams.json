@@ -31,8 +31,8 @@
             "version": "3.0.0",
             "type": "ClassDiagram",
             "size": {
-              "width": 1080,
-              "height": 760
+              "width": 1400,
+              "height": 940
             },
             "interactive": {
               "elements": {},
@@ -259,8 +259,8 @@
                 "type": "Class",
                 "owner": null,
                 "bounds": {
-                  "x": -20,
-                  "y": -360,
+                  "x": -500,
+                  "y": -410,
                   "width": 220,
                   "height": 165
                 },
@@ -279,8 +279,8 @@
                 "type": "ClassAttribute",
                 "owner": "class_ypf6o2w6l_mwrsttyt_rxp",
                 "bounds": {
-                  "x": -19.5,
-                  "y": -319.5,
+                  "x": -499.5,
+                  "y": -369.5,
                   "width": 219,
                   "height": 25
                 },
@@ -302,8 +302,8 @@
                 "type": "ClassAttribute",
                 "owner": "class_ypf6o2w6l_mwrsttyt_rxp",
                 "bounds": {
-                  "x": -19.5,
-                  "y": -294.5,
+                  "x": -499.5,
+                  "y": -344.5,
                   "width": 219,
                   "height": 25
                 },
@@ -325,8 +325,8 @@
                 "type": "ClassAttribute",
                 "owner": "class_ypf6o2w6l_mwrsttyt_rxp",
                 "bounds": {
-                  "x": -19.5,
-                  "y": -269.5,
+                  "x": -499.5,
+                  "y": -319.5,
                   "width": 219,
                   "height": 25
                 },
@@ -348,8 +348,8 @@
                 "type": "ClassAttribute",
                 "owner": "class_ypf6o2w6l_mwrsttyt_rxp",
                 "bounds": {
-                  "x": -19.5,
-                  "y": -244.5,
+                  "x": -499.5,
+                  "y": -294.5,
                   "width": 219,
                   "height": 25
                 },
@@ -371,8 +371,8 @@
                 "type": "ClassAttribute",
                 "owner": "class_ypf6o2w6l_mwrsttyt_rxp",
                 "bounds": {
-                  "x": -19.5,
-                  "y": -219.5,
+                  "x": -499.5,
+                  "y": -269.5,
                   "width": 219,
                   "height": 25
                 },
@@ -394,8 +394,8 @@
                 "type": "Class",
                 "owner": null,
                 "bounds": {
-                  "x": 300,
-                  "y": 0,
+                  "x": 110,
+                  "y": -140,
                   "width": 220,
                   "height": 65
                 },
@@ -410,8 +410,8 @@
                 "type": "ClassAttribute",
                 "owner": "class_xebn6s64u_mwrt3tm6_o9p",
                 "bounds": {
-                  "x": 300.5,
-                  "y": 40.5,
+                  "x": 110.5,
+                  "y": -99.5,
                   "width": 219,
                   "height": 25
                 },
@@ -426,6 +426,171 @@
                 "isDerived": false,
                 "isId": false,
                 "isExternalId": false
+              },
+              "class_n86tmatqd_mwrtel4b_c52": {
+                "id": "class_n86tmatqd_mwrtel4b_c52",
+                "name": "User",
+                "type": "Class",
+                "owner": null,
+                "bounds": {
+                  "x": 130,
+                  "y": -370,
+                  "width": 220,
+                  "height": 115
+                },
+                "attributes": [
+                  "attr_dnwef83qi_mwrtel4b_eyk",
+                  "attr_0xo3i3q81_mwrtel4b_p8g"
+                ],
+                "methods": [
+                  "method_8j70capyv_mwrtel4b_oet"
+                ]
+              },
+              "attr_dnwef83qi_mwrtel4b_eyk": {
+                "id": "attr_dnwef83qi_mwrtel4b_eyk",
+                "name": "name",
+                "type": "ClassAttribute",
+                "owner": "class_n86tmatqd_mwrtel4b_c52",
+                "bounds": {
+                  "x": 130.5,
+                  "y": -329.5,
+                  "width": 219,
+                  "height": 25
+                },
+                "code": "",
+                "visibility": "private",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "neuralNetworkId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "attr_0xo3i3q81_mwrtel4b_p8g": {
+                "id": "attr_0xo3i3q81_mwrtel4b_p8g",
+                "name": "role",
+                "type": "ClassAttribute",
+                "owner": "class_n86tmatqd_mwrtel4b_c52",
+                "bounds": {
+                  "x": 130.5,
+                  "y": -304.5,
+                  "width": 219,
+                  "height": 25
+                },
+                "code": "",
+                "visibility": "private",
+                "attributeType": "UserRole",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "neuralNetworkId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "method_8j70capyv_mwrtel4b_oet": {
+                "id": "method_8j70capyv_mwrtel4b_oet",
+                "name": "+ editProject(project: Project): any",
+                "type": "ClassMethod",
+                "owner": "class_n86tmatqd_mwrtel4b_c52",
+                "bounds": {
+                  "x": 130.5,
+                  "y": -279.5,
+                  "width": 219,
+                  "height": 25
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "any",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "neuralNetworkId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "class_wqah4y5hu_mwrtel4b_h5x": {
+                "id": "class_wqah4y5hu_mwrtel4b_h5x",
+                "name": "UserRole",
+                "type": "Enumeration",
+                "owner": null,
+                "bounds": {
+                  "x": 430,
+                  "y": -250,
+                  "width": 220,
+                  "height": 100
+                },
+                "attributes": [
+                  "attr_jfxef1rid_mwrtel4b_o6h",
+                  "attr_7wparxofk_mwrtel4b_xgw"
+                ],
+                "methods": []
+              },
+              "attr_jfxef1rid_mwrtel4b_o6h": {
+                "id": "attr_jfxef1rid_mwrtel4b_o6h",
+                "name": "Member",
+                "type": "ClassAttribute",
+                "owner": "class_wqah4y5hu_mwrtel4b_h5x",
+                "bounds": {
+                  "x": 430.5,
+                  "y": -199.5,
+                  "width": 219,
+                  "height": 25
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "neuralNetworkId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "attr_7wparxofk_mwrtel4b_xgw": {
+                "id": "attr_7wparxofk_mwrtel4b_xgw",
+                "name": "Manager",
+                "type": "ClassAttribute",
+                "owner": "class_wqah4y5hu_mwrtel4b_h5x",
+                "bounds": {
+                  "x": 430.5,
+                  "y": -174.5,
+                  "width": 219,
+                  "height": 25
+                },
+                "code": "",
+                "visibility": "public",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "neuralNetworkId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "ocl_lfsgum7qr_mwrtel4c_hcw": {
+                "id": "ocl_lfsgum7qr_mwrtel4c_hcw",
+                "name": "OCL",
+                "type": "ClassOCLConstraint",
+                "owner": null,
+                "bounds": {
+                  "x": 440,
+                  "y": -450,
+                  "width": 240,
+                  "height": 80
+                },
+                "description": "Only users with the Manager role may edit a project.",
+                "constraint": "context User::editProject(project: Project) pre: self.role = UserRole::Manager"
               }
             },
             "relationships": {
@@ -435,22 +600,22 @@
                 "type": "ClassBidirectional",
                 "owner": null,
                 "bounds": {
-                  "x": 200,
-                  "y": -287.5,
-                  "width": 100,
-                  "height": 358
+                  "x": -280,
+                  "y": -337.5,
+                  "width": 390,
+                  "height": 268
                 },
                 "path": [
                   {
-                    "x": 100,
-                    "y": 320
+                    "x": 390,
+                    "y": 230
                   },
                   {
-                    "x": 50,
-                    "y": 320
+                    "x": 195,
+                    "y": 230
                   },
                   {
-                    "x": 50,
+                    "x": 195,
                     "y": 10
                   },
                   {
@@ -485,11 +650,133 @@
                   }
                 },
                 "isManuallyLayouted": false
+              },
+              "rel_quatgczor_mwrtel4b_ebr": {
+                "id": "rel_quatgczor_mwrtel4b_ebr",
+                "name": "",
+                "type": "ClassBidirectional",
+                "owner": null,
+                "bounds": {
+                  "x": 90,
+                  "y": -322.5,
+                  "width": 290,
+                  "height": 253
+                },
+                "path": [
+                  {
+                    "x": 40,
+                    "y": 10
+                  },
+                  {
+                    "x": 0,
+                    "y": 10
+                  },
+                  {
+                    "x": 0,
+                    "y": 107.5
+                  },
+                  {
+                    "x": 290,
+                    "y": 107.5
+                  },
+                  {
+                    "x": 290,
+                    "y": 215
+                  },
+                  {
+                    "x": 240,
+                    "y": 215
+                  }
+                ],
+                "source": {
+                  "direction": "Left",
+                  "element": "class_n86tmatqd_mwrtel4b_c52",
+                  "multiplicity": "0..*",
+                  "role": "",
+                  "navigable": true,
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "target": {
+                  "direction": "Right",
+                  "element": "class_xebn6s64u_mwrt3tm6_o9p",
+                  "multiplicity": "0..*",
+                  "role": "",
+                  "navigable": true,
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "isManuallyLayouted": false
+              },
+              "rel_dpd3hv4zk_mwrtel4c_6s8": {
+                "id": "rel_dpd3hv4zk_mwrtel4c_6s8",
+                "name": "",
+                "type": "ClassOCLLink",
+                "owner": null,
+                "bounds": {
+                  "x": 350,
+                  "y": -420,
+                  "width": 90,
+                  "height": 128.5
+                },
+                "path": [
+                  {
+                    "x": 90,
+                    "y": 10
+                  },
+                  {
+                    "x": 45,
+                    "y": 10
+                  },
+                  {
+                    "x": 45,
+                    "y": 107.5
+                  },
+                  {
+                    "x": 0,
+                    "y": 107.5
+                  }
+                ],
+                "source": {
+                  "direction": "Left",
+                  "element": "ocl_lfsgum7qr_mwrtel4c_hcw",
+                  "multiplicity": "",
+                  "role": "",
+                  "navigable": true,
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "target": {
+                  "direction": "Right",
+                  "element": "class_n86tmatqd_mwrtel4b_c52",
+                  "multiplicity": "",
+                  "role": "",
+                  "navigable": true,
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "isManuallyLayouted": false
               }
             },
             "assessments": {}
           },
-          "lastUpdate": "2026-11-22T12:25:19.122Z"
+          "lastUpdate": "2026-11-22T13:19:04.461Z"
         }
       ],
       "GUINoCodeDiagram": [
@@ -516,20 +803,20 @@
                       "components": [
                         {
                           "attributes": {
-                            "id": "i8106"
+                            "id": "inyxn"
                           },
                           "components": [
                             {
                               "tagName": "nav",
                               "attributes": {
-                                "id": "icmdy"
+                                "id": "i8tkl"
                               },
                               "components": [
                                 {
                                   "tagName": "h2",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "i3kkp"
+                                    "id": "itpmx"
                                   },
                                   "components": [
                                     {
@@ -540,14 +827,14 @@
                                 },
                                 {
                                   "attributes": {
-                                    "id": "i0z1q"
+                                    "id": "iusmj"
                                   },
                                   "components": [
                                     {
                                       "type": "link",
                                       "attributes": {
                                         "href": "/helloworld",
-                                        "id": "itfpd"
+                                        "id": "ijasp"
                                       },
                                       "components": [
                                         {
@@ -559,34 +846,8 @@
                                     {
                                       "type": "link",
                                       "attributes": {
-                                        "href": "/timeservice",
-                                        "id": "il4dq"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "TimeService"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/veryimportantclass",
-                                        "id": "ipws8"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "veryImportantClass"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
                                         "href": "/appointment",
-                                        "id": "ickf7"
+                                        "id": "istti"
                                       },
                                       "components": [
                                         {
@@ -599,12 +860,25 @@
                                       "type": "link",
                                       "attributes": {
                                         "href": "/project",
-                                        "id": "ix68j"
+                                        "id": "itf8l"
                                       },
                                       "components": [
                                         {
                                           "type": "textnode",
                                           "content": "Project"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/user",
+                                        "id": "ilk0v"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "User"
                                         }
                                       ]
                                     }
@@ -613,7 +887,7 @@
                                 {
                                   "type": "text",
                                   "attributes": {
-                                    "id": "iljjz"
+                                    "id": "i6uz2"
                                   },
                                   "components": [
                                     {
@@ -627,14 +901,14 @@
                             {
                               "tagName": "main",
                               "attributes": {
-                                "id": "il4b3"
+                                "id": "i7a7i"
                               },
                               "components": [
                                 {
                                   "tagName": "h1",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "iye2h"
+                                    "id": "ihltv"
                                   },
                                   "components": [
                                     {
@@ -647,7 +921,7 @@
                                   "tagName": "p",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "izhpj"
+                                    "id": "idreg"
                                   },
                                   "components": [
                                     {
@@ -750,7 +1024,7 @@
                                 },
                                 {
                                   "attributes": {
-                                    "id": "ivzvh"
+                                    "id": "iw2ba"
                                   },
                                   "components": [
                                     {
@@ -766,7 +1040,7 @@
                                         "data-method-class": "class_kjy9sn6ld_mw0vgnrg_m1e",
                                         "data-method": "method_zg5zggc0r_mw0vgnrg_d4h",
                                         "data-instance-source": "table-helloworld-0",
-                                        "id": "igjvg"
+                                        "id": "idt0f"
                                       },
                                       "button-label": "showHelloWorld",
                                       "action-type": "run-method",
@@ -793,7 +1067,7 @@
                                         "data-method-class": "class_kjy9sn6ld_mw0vgnrg_m1e",
                                         "data-method": "method_q42piav36_mw4zqmk6_srk",
                                         "data-instance-source": "table-helloworld-0",
-                                        "id": "i8y3r"
+                                        "id": "ijhpz"
                                       },
                                       "button-label": "+ showCurrentTime",
                                       "action-type": "run-method",
@@ -821,561 +1095,11 @@
                         "tagName": "html"
                       }
                     },
-                    "id": "oL0wbdeeVk9JXfeV"
+                    "id": "pnQAjm5c8A0fx30m"
                   }
                 ],
                 "id": "page-helloworld-0",
                 "route_path": "/helloworld"
-              },
-              {
-                "name": "TimeService",
-                "frames": [
-                  {
-                    "component": {
-                      "type": "wrapper",
-                      "stylable": [
-                        "background",
-                        "background-color",
-                        "background-image",
-                        "background-repeat",
-                        "background-attachment",
-                        "background-position",
-                        "background-size"
-                      ],
-                      "components": [
-                        {
-                          "attributes": {
-                            "id": "iat5f"
-                          },
-                          "components": [
-                            {
-                              "tagName": "nav",
-                              "attributes": {
-                                "id": "i8l3a"
-                              },
-                              "components": [
-                                {
-                                  "tagName": "h2",
-                                  "type": "text",
-                                  "attributes": {
-                                    "id": "ih6ob"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "textnode",
-                                      "content": "BESSER"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "attributes": {
-                                    "id": "ic57j"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/helloworld",
-                                        "id": "iqaqf"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "HelloWorld"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/timeservice",
-                                        "id": "ihzvy"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "TimeService"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/veryimportantclass",
-                                        "id": "i44ec"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "veryImportantClass"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/appointment",
-                                        "id": "i2tjp"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "Appointment"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/project",
-                                        "id": "ieqb1"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "Project"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "text",
-                                  "attributes": {
-                                    "id": "i2c9k"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "textnode",
-                                      "content": "\u00a9 2026 BESSER. All rights reserved."
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "tagName": "main",
-                              "attributes": {
-                                "id": "iuev4"
-                              },
-                              "components": [
-                                {
-                                  "tagName": "h1",
-                                  "type": "text",
-                                  "attributes": {
-                                    "id": "iredf"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "textnode",
-                                      "content": "TimeService"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "tagName": "p",
-                                  "type": "text",
-                                  "attributes": {
-                                    "id": "i8g3p"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "textnode",
-                                      "content": "Manage TimeService data"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "table",
-                                  "style": "",
-                                  "classes": [
-                                    "has-data-binding"
-                                  ],
-                                  "attributes": {
-                                    "chart-color": "#2c3e50",
-                                    "chart-title": "TimeService List",
-                                    "data-source": "class_yj7pqh7vi_mw4zqmk6_dtb",
-                                    "show-header": "true",
-                                    "striped-rows": "false",
-                                    "show-pagination": "true",
-                                    "rows-per-page": "5",
-                                    "action-buttons": "true",
-                                    "columns": [],
-                                    "id": "table-timeservice-1",
-                                    "filter": ""
-                                  },
-                                  "chart-title": "TimeService List",
-                                  "data-source": "class_yj7pqh7vi_mw4zqmk6_dtb",
-                                  "show-header": "true",
-                                  "striped-rows": "false",
-                                  "show-pagination": "true",
-                                  "action-buttons": "true",
-                                  "rows-per-page": "5",
-                                  "filter": "",
-                                  "columns": [],
-                                  "components": [
-                                    {
-                                      "type": "tbody",
-                                      "draggable": [
-                                        "table"
-                                      ],
-                                      "droppable": [
-                                        "tr"
-                                      ],
-                                      "components": [
-                                        {
-                                          "type": "row",
-                                          "draggable": [
-                                            "thead",
-                                            "tbody",
-                                            "tfoot"
-                                          ],
-                                          "droppable": [
-                                            "th",
-                                            "td"
-                                          ],
-                                          "classes": [
-                                            "row"
-                                          ],
-                                          "components": [
-                                            {
-                                              "type": "cell",
-                                              "draggable": [
-                                                "tr"
-                                              ],
-                                              "classes": [
-                                                "cell"
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ],
-                                  "chart-color": "#2c3e50"
-                                },
-                                {
-                                  "attributes": {
-                                    "id": "i5wh3"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "action-button",
-                                      "style": "",
-                                      "classes": [
-                                        "action-button-component"
-                                      ],
-                                      "attributes": {
-                                        "type": "button",
-                                        "data-button-label": "+ getCurrentTime",
-                                        "data-action-type": "run-method",
-                                        "data-method-class": "class_yj7pqh7vi_mw4zqmk6_dtb",
-                                        "data-method": "method_ye0hlrs7f_mw4zqmk6_ih6",
-                                        "data-instance-source": "table-timeservice-1",
-                                        "id": "iadlb"
-                                      },
-                                      "button-label": "+ getCurrentTime",
-                                      "action-type": "run-method",
-                                      "method-class": "class_yj7pqh7vi_mw4zqmk6_dtb",
-                                      "method": "method_ye0hlrs7f_mw4zqmk6_ih6",
-                                      "instance-source": "table-timeservice-1",
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "+ getCurrentTime"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ],
-                      "head": {
-                        "type": "head"
-                      },
-                      "docEl": {
-                        "tagName": "html"
-                      }
-                    },
-                    "id": "WzUBFh271R440jnY"
-                  }
-                ],
-                "id": "page-timeservice-1",
-                "route_path": "/timeservice"
-              },
-              {
-                "name": "veryImportantClass",
-                "frames": [
-                  {
-                    "component": {
-                      "type": "wrapper",
-                      "stylable": [
-                        "background",
-                        "background-color",
-                        "background-image",
-                        "background-repeat",
-                        "background-attachment",
-                        "background-position",
-                        "background-size"
-                      ],
-                      "components": [
-                        {
-                          "attributes": {
-                            "id": "ig01p"
-                          },
-                          "components": [
-                            {
-                              "tagName": "nav",
-                              "attributes": {
-                                "id": "iwvbs"
-                              },
-                              "components": [
-                                {
-                                  "tagName": "h2",
-                                  "type": "text",
-                                  "attributes": {
-                                    "id": "ipihh"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "textnode",
-                                      "content": "BESSER"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "attributes": {
-                                    "id": "iazdl"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/helloworld",
-                                        "id": "i7ayc"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "HelloWorld"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/timeservice",
-                                        "id": "is2dk"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "TimeService"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/veryimportantclass",
-                                        "id": "ie4ft"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "veryImportantClass"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/appointment",
-                                        "id": "itpe4"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "Appointment"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/project",
-                                        "id": "ih4mv"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "Project"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "text",
-                                  "attributes": {
-                                    "id": "ii5xh"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "textnode",
-                                      "content": "\u00a9 2026 BESSER. All rights reserved."
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "tagName": "main",
-                              "attributes": {
-                                "id": "i079oa"
-                              },
-                              "components": [
-                                {
-                                  "tagName": "h1",
-                                  "type": "text",
-                                  "attributes": {
-                                    "id": "iqwusc"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "textnode",
-                                      "content": "veryImportantClass"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "tagName": "p",
-                                  "type": "text",
-                                  "attributes": {
-                                    "id": "io3qw8"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "textnode",
-                                      "content": "Manage veryImportantClass data"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "table",
-                                  "style": "",
-                                  "classes": [
-                                    "has-data-binding"
-                                  ],
-                                  "attributes": {
-                                    "chart-color": "#2c3e50",
-                                    "chart-title": "veryImportantClass List",
-                                    "data-source": "888ba94d-b774-4751-a7b4-b9065d249521",
-                                    "show-header": "true",
-                                    "striped-rows": "false",
-                                    "show-pagination": "true",
-                                    "rows-per-page": "5",
-                                    "action-buttons": "true",
-                                    "columns": [
-                                      {
-                                        "field": "UpdateIsBugged",
-                                        "label": "UpdateIsBugged",
-                                        "columnType": "field",
-                                        "_expanded": false
-                                      },
-                                      {
-                                        "field": "ThisClassIsForDemonstrationOnly",
-                                        "label": "ThisClassIsForDemonstrationOnly",
-                                        "columnType": "field",
-                                        "_expanded": false
-                                      }
-                                    ],
-                                    "id": "table-veryimportantclass-2",
-                                    "filter": ""
-                                  },
-                                  "chart-title": "veryImportantClass List",
-                                  "data-source": "888ba94d-b774-4751-a7b4-b9065d249521",
-                                  "show-header": "true",
-                                  "striped-rows": "false",
-                                  "show-pagination": "true",
-                                  "action-buttons": "true",
-                                  "rows-per-page": "5",
-                                  "filter": "",
-                                  "columns": [
-                                    {
-                                      "field": "UpdateIsBugged",
-                                      "label": "UpdateIsBugged",
-                                      "columnType": "field",
-                                      "_expanded": false
-                                    },
-                                    {
-                                      "field": "ThisClassIsForDemonstrationOnly",
-                                      "label": "ThisClassIsForDemonstrationOnly",
-                                      "columnType": "field",
-                                      "_expanded": false
-                                    }
-                                  ],
-                                  "components": [
-                                    {
-                                      "type": "tbody",
-                                      "draggable": [
-                                        "table"
-                                      ],
-                                      "droppable": [
-                                        "tr"
-                                      ],
-                                      "components": [
-                                        {
-                                          "type": "row",
-                                          "draggable": [
-                                            "thead",
-                                            "tbody",
-                                            "tfoot"
-                                          ],
-                                          "droppable": [
-                                            "th",
-                                            "td"
-                                          ],
-                                          "classes": [
-                                            "row"
-                                          ],
-                                          "components": [
-                                            {
-                                              "type": "cell",
-                                              "draggable": [
-                                                "tr"
-                                              ],
-                                              "classes": [
-                                                "cell"
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ],
-                                  "chart-color": "#2c3e50"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ],
-                      "head": {
-                        "type": "head"
-                      },
-                      "docEl": {
-                        "tagName": "html"
-                      }
-                    },
-                    "id": "imRbDTZ18D9ankHD"
-                  }
-                ],
-                "id": "page-veryimportantclass-2",
-                "route_path": "/veryimportantclass"
               },
               {
                 "name": "Appointment",
@@ -1395,20 +1119,20 @@
                       "components": [
                         {
                           "attributes": {
-                            "id": "i7877g"
+                            "id": "i2tllx"
                           },
                           "components": [
                             {
                               "tagName": "nav",
                               "attributes": {
-                                "id": "izufli"
+                                "id": "irmslp"
                               },
                               "components": [
                                 {
                                   "tagName": "h2",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "iogi8a"
+                                    "id": "it47kl"
                                   },
                                   "components": [
                                     {
@@ -1419,14 +1143,14 @@
                                 },
                                 {
                                   "attributes": {
-                                    "id": "ietwse"
+                                    "id": "ifa6w2"
                                   },
                                   "components": [
                                     {
                                       "type": "link",
                                       "attributes": {
                                         "href": "/helloworld",
-                                        "id": "ik0wd2"
+                                        "id": "iunw7q"
                                       },
                                       "components": [
                                         {
@@ -1438,34 +1162,8 @@
                                     {
                                       "type": "link",
                                       "attributes": {
-                                        "href": "/timeservice",
-                                        "id": "i0494o"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "TimeService"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/veryimportantclass",
-                                        "id": "iuel4h"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "veryImportantClass"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
                                         "href": "/appointment",
-                                        "id": "irzcdt"
+                                        "id": "irubdn"
                                       },
                                       "components": [
                                         {
@@ -1478,12 +1176,25 @@
                                       "type": "link",
                                       "attributes": {
                                         "href": "/project",
-                                        "id": "iprz57"
+                                        "id": "iszvua"
                                       },
                                       "components": [
                                         {
                                           "type": "textnode",
                                           "content": "Project"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/user",
+                                        "id": "i8om83"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "User"
                                         }
                                       ]
                                     }
@@ -1492,7 +1203,7 @@
                                 {
                                   "type": "text",
                                   "attributes": {
-                                    "id": "im8prw"
+                                    "id": "i1dvvh"
                                   },
                                   "components": [
                                     {
@@ -1506,14 +1217,14 @@
                             {
                               "tagName": "main",
                               "attributes": {
-                                "id": "i46pp1"
+                                "id": "it9qwy"
                               },
                               "components": [
                                 {
                                   "tagName": "h1",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "i41wd8"
+                                    "id": "ikr5qk"
                                   },
                                   "components": [
                                     {
@@ -1526,7 +1237,7 @@
                                   "tagName": "p",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "idbwtf"
+                                    "id": "i33qyp"
                                   },
                                   "components": [
                                     {
@@ -1694,7 +1405,7 @@
                         "tagName": "html"
                       }
                     },
-                    "id": "YTwTKGM4UtbLUGTb"
+                    "id": "hzSFWuAt9jywPwgP"
                   }
                 ],
                 "id": "page-appointment-3",
@@ -1718,20 +1429,20 @@
                       "components": [
                         {
                           "attributes": {
-                            "id": "ijexzk"
+                            "id": "ikpqfd"
                           },
                           "components": [
                             {
                               "tagName": "nav",
                               "attributes": {
-                                "id": "iiy6uq"
+                                "id": "iytnrs"
                               },
                               "components": [
                                 {
                                   "tagName": "h2",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "iap6xa"
+                                    "id": "iiucwf"
                                   },
                                   "components": [
                                     {
@@ -1742,14 +1453,14 @@
                                 },
                                 {
                                   "attributes": {
-                                    "id": "i6v32l"
+                                    "id": "ir33ck"
                                   },
                                   "components": [
                                     {
                                       "type": "link",
                                       "attributes": {
                                         "href": "/helloworld",
-                                        "id": "ipxk5h"
+                                        "id": "i0jeuy"
                                       },
                                       "components": [
                                         {
@@ -1761,34 +1472,8 @@
                                     {
                                       "type": "link",
                                       "attributes": {
-                                        "href": "/timeservice",
-                                        "id": "ieeryy"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "TimeService"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
-                                        "href": "/veryimportantclass",
-                                        "id": "ikj25y"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textnode",
-                                          "content": "veryImportantClass"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "link",
-                                      "attributes": {
                                         "href": "/appointment",
-                                        "id": "ih9p02"
+                                        "id": "iozjef"
                                       },
                                       "components": [
                                         {
@@ -1801,12 +1486,25 @@
                                       "type": "link",
                                       "attributes": {
                                         "href": "/project",
-                                        "id": "iqc7km"
+                                        "id": "ieqmsb"
                                       },
                                       "components": [
                                         {
                                           "type": "textnode",
                                           "content": "Project"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/user",
+                                        "id": "ioosnq"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "User"
                                         }
                                       ]
                                     }
@@ -1815,7 +1513,7 @@
                                 {
                                   "type": "text",
                                   "attributes": {
-                                    "id": "irwddy"
+                                    "id": "ivpbmu"
                                   },
                                   "components": [
                                     {
@@ -1829,14 +1527,14 @@
                             {
                               "tagName": "main",
                               "attributes": {
-                                "id": "inzyul"
+                                "id": "inzetw"
                               },
                               "components": [
                                 {
                                   "tagName": "h1",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "iez091"
+                                    "id": "iv89qw"
                                   },
                                   "components": [
                                     {
@@ -1849,7 +1547,7 @@
                                   "tagName": "p",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "itj79d"
+                                    "id": "id3r9u"
                                   },
                                   "components": [
                                     {
@@ -1887,6 +1585,14 @@
                                         "lookupEntity": "class_ypf6o2w6l_mwrsttyt_rxp",
                                         "lookupField": "name",
                                         "_expanded": false
+                                      },
+                                      {
+                                        "field": "User",
+                                        "label": "User",
+                                        "columnType": "lookup",
+                                        "lookupEntity": "class_n86tmatqd_mwrtel4b_c52",
+                                        "lookupField": "name",
+                                        "_expanded": false
                                       }
                                     ],
                                     "id": "table-project-4",
@@ -1912,6 +1618,14 @@
                                       "label": "Appointment",
                                       "columnType": "lookup",
                                       "lookupEntity": "class_ypf6o2w6l_mwrsttyt_rxp",
+                                      "lookupField": "name",
+                                      "_expanded": false
+                                    },
+                                    {
+                                      "field": "User",
+                                      "label": "User",
+                                      "columnType": "lookup",
+                                      "lookupEntity": "class_n86tmatqd_mwrtel4b_c52",
                                       "lookupField": "name",
                                       "_expanded": false
                                     }
@@ -1969,11 +1683,324 @@
                         "tagName": "html"
                       }
                     },
-                    "id": "7tDVK9apKmBzQ4mW"
+                    "id": "2NUgh8sTohQRTMiX"
                   }
                 ],
                 "id": "page-project-4",
                 "route_path": "/project"
+              },
+              {
+                "name": "User",
+                "frames": [
+                  {
+                    "component": {
+                      "type": "wrapper",
+                      "stylable": [
+                        "background",
+                        "background-color",
+                        "background-image",
+                        "background-repeat",
+                        "background-attachment",
+                        "background-position",
+                        "background-size"
+                      ],
+                      "components": [
+                        {
+                          "attributes": {
+                            "id": "id0ihy"
+                          },
+                          "components": [
+                            {
+                              "tagName": "nav",
+                              "attributes": {
+                                "id": "itvnpf"
+                              },
+                              "components": [
+                                {
+                                  "tagName": "h2",
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "imegjy"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "BESSER"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "attributes": {
+                                    "id": "ijtogn"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/helloworld",
+                                        "id": "ijqjph"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "HelloWorld"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/appointment",
+                                        "id": "iq26vh"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Appointment"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/project",
+                                        "id": "ib4o2g"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Project"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/user",
+                                        "id": "ivhlth"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "User"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "ip956p"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "\u00a9 2026 BESSER. All rights reserved."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tagName": "main",
+                              "attributes": {
+                                "id": "ih32zl"
+                              },
+                              "components": [
+                                {
+                                  "tagName": "h1",
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "ir8ocj"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "User"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tagName": "p",
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "ivuy2f"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Manage User data"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "table",
+                                  "style": "",
+                                  "classes": [
+                                    "has-data-binding"
+                                  ],
+                                  "attributes": {
+                                    "chart-color": "#2c3e50",
+                                    "chart-title": "User List",
+                                    "data-source": "class_n86tmatqd_mwrtel4b_c52",
+                                    "show-header": "true",
+                                    "striped-rows": "false",
+                                    "show-pagination": "true",
+                                    "rows-per-page": "5",
+                                    "action-buttons": "true",
+                                    "columns": [
+                                      {
+                                        "field": "name",
+                                        "label": "Name",
+                                        "columnType": "field",
+                                        "_expanded": false
+                                      },
+                                      {
+                                        "field": "role",
+                                        "label": "Role",
+                                        "columnType": "field",
+                                        "_expanded": false
+                                      },
+                                      {
+                                        "field": "Project",
+                                        "label": "Project",
+                                        "columnType": "lookup",
+                                        "lookupEntity": "class_xebn6s64u_mwrt3tm6_o9p",
+                                        "lookupField": "name",
+                                        "_expanded": false
+                                      }
+                                    ],
+                                    "id": "table-user-5",
+                                    "filter": ""
+                                  },
+                                  "chart-title": "User List",
+                                  "data-source": "class_n86tmatqd_mwrtel4b_c52",
+                                  "show-header": "true",
+                                  "striped-rows": "false",
+                                  "show-pagination": "true",
+                                  "action-buttons": "true",
+                                  "rows-per-page": "5",
+                                  "filter": "",
+                                  "columns": [
+                                    {
+                                      "field": "name",
+                                      "label": "Name",
+                                      "columnType": "field",
+                                      "_expanded": false
+                                    },
+                                    {
+                                      "field": "role",
+                                      "label": "Role",
+                                      "columnType": "field",
+                                      "_expanded": false
+                                    },
+                                    {
+                                      "field": "Project",
+                                      "label": "Project",
+                                      "columnType": "lookup",
+                                      "lookupEntity": "class_xebn6s64u_mwrt3tm6_o9p",
+                                      "lookupField": "name",
+                                      "_expanded": false
+                                    }
+                                  ],
+                                  "components": [
+                                    {
+                                      "type": "tbody",
+                                      "draggable": [
+                                        "table"
+                                      ],
+                                      "droppable": [
+                                        "tr"
+                                      ],
+                                      "components": [
+                                        {
+                                          "type": "row",
+                                          "draggable": [
+                                            "thead",
+                                            "tbody",
+                                            "tfoot"
+                                          ],
+                                          "droppable": [
+                                            "th",
+                                            "td"
+                                          ],
+                                          "classes": [
+                                            "row"
+                                          ],
+                                          "components": [
+                                            {
+                                              "type": "cell",
+                                              "draggable": [
+                                                "tr"
+                                              ],
+                                              "classes": [
+                                                "cell"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "chart-color": "#2c3e50"
+                                },
+                                {
+                                  "attributes": {
+                                    "id": "i873fg"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "action-button",
+                                      "content": "+ editProject",
+                                      "style": "",
+                                      "classes": [
+                                        "action-button-component"
+                                      ],
+                                      "attributes": {
+                                        "type": "button",
+                                        "data-button-label": "+ editProject",
+                                        "data-action-type": "run-method",
+                                        "data-method-class": "class_n86tmatqd_mwrtel4b_c52",
+                                        "data-method": "method_8j70capyv_mwrtel4b_oet",
+                                        "data-instance-source": "table-user-5",
+                                        "id": "i2w16z",
+                                        "data-confirmation": "false",
+                                        "data-confirmation-message": "Are you sure?",
+                                        "button-label": "+ editProject",
+                                        "data-method-name": "method_8j70capyv_mwrtel4b_oet"
+                                      },
+                                      "button-label": "+ editProject",
+                                      "action-type": "run-method",
+                                      "method-class": "class_n86tmatqd_mwrtel4b_c52",
+                                      "method": "method_8j70capyv_mwrtel4b_oet",
+                                      "instance-source": "table-user-5",
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "+ editProject"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "head": {
+                        "type": "head"
+                      },
+                      "docEl": {
+                        "tagName": "html"
+                      }
+                    },
+                    "id": "U3BgPYXWlAoTNEF1"
+                  }
+                ],
+                "id": "page-user-5",
+                "route_path": "/user"
               }
             ],
             "styles": [
@@ -2797,7 +2824,7 @@
               },
               {
                 "selectors": [
-                  "#i3kkp"
+                  "#itpmx"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -2808,7 +2835,7 @@
               },
               {
                 "selectors": [
-                  "#itfpd"
+                  "#ijasp"
                 ],
                 "style": {
                   "color": "white",
@@ -2822,7 +2849,7 @@
               },
               {
                 "selectors": [
-                  "#il4dq"
+                  "#istti"
                 ],
                 "style": {
                   "color": "white",
@@ -2836,7 +2863,7 @@
               },
               {
                 "selectors": [
-                  "#ipws8"
+                  "#itf8l"
                 ],
                 "style": {
                   "color": "white",
@@ -2850,7 +2877,7 @@
               },
               {
                 "selectors": [
-                  "#ickf7"
+                  "#ilk0v"
                 ],
                 "style": {
                   "color": "white",
@@ -2864,21 +2891,7 @@
               },
               {
                 "selectors": [
-                  "#ix68j"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#i0z1q"
+                  "#iusmj"
                 ],
                 "style": {
                   "display": "flex",
@@ -2888,7 +2901,7 @@
               },
               {
                 "selectors": [
-                  "#iljjz"
+                  "#i6uz2"
                 ],
                 "style": {
                   "margin-top": "auto",
@@ -2901,7 +2914,7 @@
               },
               {
                 "selectors": [
-                  "#icmdy"
+                  "#i8tkl"
                 ],
                 "style": {
                   "width": "250px",
@@ -2915,7 +2928,7 @@
               },
               {
                 "selectors": [
-                  "#iye2h"
+                  "#ihltv"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -2926,7 +2939,7 @@
               },
               {
                 "selectors": [
-                  "#izhpj"
+                  "#idreg"
                 ],
                 "style": {
                   "color": "#666",
@@ -2935,16 +2948,7 @@
               },
               {
                 "selectors": [
-                  "#table-helloworld-0"
-                ],
-                "style": {
-                  "width": "100%",
-                  "min-height": "400px"
-                }
-              },
-              {
-                "selectors": [
-                  "#igjvg"
+                  "#idt0f"
                 ],
                 "style": {
                   "display": "inline-flex",
@@ -2965,7 +2969,7 @@
               },
               {
                 "selectors": [
-                  "#i8y3r"
+                  "#ijhpz"
                 ],
                 "style": {
                   "display": "inline-flex",
@@ -2986,7 +2990,7 @@
               },
               {
                 "selectors": [
-                  "#ivzvh"
+                  "#iw2ba"
                 ],
                 "style": {
                   "margin-top": "20px",
@@ -2997,7 +3001,7 @@
               },
               {
                 "selectors": [
-                  "#il4b3"
+                  "#i7a7i"
                 ],
                 "style": {
                   "flex": "1",
@@ -3008,7 +3012,7 @@
               },
               {
                 "selectors": [
-                  "#i8106"
+                  "#inyxn"
                 ],
                 "style": {
                   "display": "flex",
@@ -3018,7 +3022,7 @@
               },
               {
                 "selectors": [
-                  "#ih6ob"
+                  "#it47kl"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -3029,7 +3033,7 @@
               },
               {
                 "selectors": [
-                  "#iqaqf"
+                  "#iunw7q"
                 ],
                 "style": {
                   "color": "white",
@@ -3043,7 +3047,7 @@
               },
               {
                 "selectors": [
-                  "#ihzvy"
+                  "#irubdn"
                 ],
                 "style": {
                   "color": "white",
@@ -3057,7 +3061,7 @@
               },
               {
                 "selectors": [
-                  "#i44ec"
+                  "#iszvua"
                 ],
                 "style": {
                   "color": "white",
@@ -3071,7 +3075,7 @@
               },
               {
                 "selectors": [
-                  "#i2tjp"
+                  "#i8om83"
                 ],
                 "style": {
                   "color": "white",
@@ -3085,21 +3089,7 @@
               },
               {
                 "selectors": [
-                  "#ieqb1"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#ic57j"
+                  "#ifa6w2"
                 ],
                 "style": {
                   "display": "flex",
@@ -3109,7 +3099,7 @@
               },
               {
                 "selectors": [
-                  "#i2c9k"
+                  "#i1dvvh"
                 ],
                 "style": {
                   "margin-top": "auto",
@@ -3122,7 +3112,7 @@
               },
               {
                 "selectors": [
-                  "#i8l3a"
+                  "#irmslp"
                 ],
                 "style": {
                   "width": "250px",
@@ -3136,7 +3126,7 @@
               },
               {
                 "selectors": [
-                  "#iredf"
+                  "#ikr5qk"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -3147,375 +3137,7 @@
               },
               {
                 "selectors": [
-                  "#i8g3p"
-                ],
-                "style": {
-                  "color": "#666",
-                  "margin-bottom": "30px"
-                }
-              },
-              {
-                "selectors": [
-                  "#table-timeservice-1"
-                ],
-                "style": {
-                  "width": "100%",
-                  "min-height": "400px"
-                }
-              },
-              {
-                "selectors": [
-                  "#iadlb"
-                ],
-                "style": {
-                  "display": "inline-flex",
-                  "align-items": "center",
-                  "padding": "6px 14px",
-                  "background": "linear-gradient(90deg, #2563eb 0%, #1e40af 100%)",
-                  "color": "#fff",
-                  "text-decoration": "none",
-                  "border-radius": "4px",
-                  "font-size": "13px",
-                  "font-weight": "600",
-                  "letter-spacing": "0.01em",
-                  "cursor": "pointer",
-                  "border": "none",
-                  "box-shadow": "0 1px 4px rgba(37,99,235,0.10)",
-                  "transition": "background 0.2s"
-                }
-              },
-              {
-                "selectors": [
-                  "#i5wh3"
-                ],
-                "style": {
-                  "margin-top": "20px",
-                  "display": "flex",
-                  "gap": "10px",
-                  "flex-wrap": "wrap"
-                }
-              },
-              {
-                "selectors": [
-                  "#iuev4"
-                ],
-                "style": {
-                  "flex": "1",
-                  "padding": "40px",
-                  "overflow-y": "auto",
-                  "background": "#f5f5f5"
-                }
-              },
-              {
-                "selectors": [
-                  "#iat5f"
-                ],
-                "style": {
-                  "display": "flex",
-                  "height": "100vh",
-                  "font-family": "Arial, sans-serif"
-                }
-              },
-              {
-                "selectors": [
-                  "#ipihh"
-                ],
-                "style": {
-                  "margin-top": "0",
-                  "font-size": "24px",
-                  "margin-bottom": "30px",
-                  "font-weight": "bold"
-                }
-              },
-              {
-                "selectors": [
-                  "#i7ayc"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#is2dk"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#ie4ft"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "rgba(255,255,255,0.2)",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#itpe4"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#ih4mv"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#iazdl"
-                ],
-                "style": {
-                  "display": "flex",
-                  "flex-direction": "column",
-                  "flex": "1"
-                }
-              },
-              {
-                "selectors": [
-                  "#ii5xh"
-                ],
-                "style": {
-                  "margin-top": "auto",
-                  "padding-top": "20px",
-                  "border-top": "1px solid rgba(255,255,255,0.2)",
-                  "font-size": "11px",
-                  "opacity": "0.8",
-                  "text-align": "center"
-                }
-              },
-              {
-                "selectors": [
-                  "#iwvbs"
-                ],
-                "style": {
-                  "width": "250px",
-                  "background": "linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)",
-                  "color": "white",
-                  "padding": "20px",
-                  "overflow-y": "auto",
-                  "display": "flex",
-                  "flex-direction": "column"
-                }
-              },
-              {
-                "selectors": [
-                  "#iqwusc"
-                ],
-                "style": {
-                  "margin-top": "0",
-                  "color": "#333",
-                  "font-size": "32px",
-                  "margin-bottom": "10px"
-                }
-              },
-              {
-                "selectors": [
-                  "#io3qw8"
-                ],
-                "style": {
-                  "color": "#666",
-                  "margin-bottom": "30px"
-                }
-              },
-              {
-                "selectors": [
-                  "#table-veryimportantclass-2"
-                ],
-                "style": {
-                  "width": "100%",
-                  "min-height": "400px"
-                }
-              },
-              {
-                "selectors": [
-                  "#i079oa"
-                ],
-                "style": {
-                  "flex": "1",
-                  "padding": "40px",
-                  "overflow-y": "auto",
-                  "background": "#f5f5f5"
-                }
-              },
-              {
-                "selectors": [
-                  "#ig01p"
-                ],
-                "style": {
-                  "display": "flex",
-                  "height": "100vh",
-                  "font-family": "Arial, sans-serif"
-                }
-              },
-              {
-                "selectors": [
-                  "#iogi8a"
-                ],
-                "style": {
-                  "margin-top": "0",
-                  "font-size": "24px",
-                  "margin-bottom": "30px",
-                  "font-weight": "bold"
-                }
-              },
-              {
-                "selectors": [
-                  "#ik0wd2"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#i0494o"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#iuel4h"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#irzcdt"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "rgba(255,255,255,0.2)",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#iprz57"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#ietwse"
-                ],
-                "style": {
-                  "display": "flex",
-                  "flex-direction": "column",
-                  "flex": "1"
-                }
-              },
-              {
-                "selectors": [
-                  "#im8prw"
-                ],
-                "style": {
-                  "margin-top": "auto",
-                  "padding-top": "20px",
-                  "border-top": "1px solid rgba(255,255,255,0.2)",
-                  "font-size": "11px",
-                  "opacity": "0.8",
-                  "text-align": "center"
-                }
-              },
-              {
-                "selectors": [
-                  "#izufli"
-                ],
-                "style": {
-                  "width": "250px",
-                  "background": "linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)",
-                  "color": "white",
-                  "padding": "20px",
-                  "overflow-y": "auto",
-                  "display": "flex",
-                  "flex-direction": "column"
-                }
-              },
-              {
-                "selectors": [
-                  "#i41wd8"
-                ],
-                "style": {
-                  "margin-top": "0",
-                  "color": "#333",
-                  "font-size": "32px",
-                  "margin-bottom": "10px"
-                }
-              },
-              {
-                "selectors": [
-                  "#idbwtf"
+                  "#i33qyp"
                 ],
                 "style": {
                   "color": "#666",
@@ -3533,7 +3155,7 @@
               },
               {
                 "selectors": [
-                  "#i46pp1"
+                  "#it9qwy"
                 ],
                 "style": {
                   "flex": "1",
@@ -3544,7 +3166,7 @@
               },
               {
                 "selectors": [
-                  "#i7877g"
+                  "#i2tllx"
                 ],
                 "style": {
                   "display": "flex",
@@ -3554,7 +3176,7 @@
               },
               {
                 "selectors": [
-                  "#iap6xa"
+                  "#iiucwf"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -3565,7 +3187,7 @@
               },
               {
                 "selectors": [
-                  "#ipxk5h"
+                  "#i0jeuy"
                 ],
                 "style": {
                   "color": "white",
@@ -3579,7 +3201,7 @@
               },
               {
                 "selectors": [
-                  "#ieeryy"
+                  "#iozjef"
                 ],
                 "style": {
                   "color": "white",
@@ -3593,35 +3215,7 @@
               },
               {
                 "selectors": [
-                  "#ikj25y"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#ih9p02"
-                ],
-                "style": {
-                  "color": "white",
-                  "text-decoration": "none",
-                  "padding": "10px 15px",
-                  "display": "block",
-                  "background": "transparent",
-                  "border-radius": "4px",
-                  "margin-bottom": "5px"
-                }
-              },
-              {
-                "selectors": [
-                  "#iqc7km"
+                  "#ieqmsb"
                 ],
                 "style": {
                   "color": "white",
@@ -3635,7 +3229,21 @@
               },
               {
                 "selectors": [
-                  "#i6v32l"
+                  "#ioosnq"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ir33ck"
                 ],
                 "style": {
                   "display": "flex",
@@ -3645,7 +3253,7 @@
               },
               {
                 "selectors": [
-                  "#irwddy"
+                  "#ivpbmu"
                 ],
                 "style": {
                   "margin-top": "auto",
@@ -3658,7 +3266,7 @@
               },
               {
                 "selectors": [
-                  "#iiy6uq"
+                  "#iytnrs"
                 ],
                 "style": {
                   "width": "250px",
@@ -3672,7 +3280,7 @@
               },
               {
                 "selectors": [
-                  "#iez091"
+                  "#iv89qw"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -3683,7 +3291,7 @@
               },
               {
                 "selectors": [
-                  "#itj79d"
+                  "#id3r9u"
                 ],
                 "style": {
                   "color": "#666",
@@ -3701,7 +3309,7 @@
               },
               {
                 "selectors": [
-                  "#inzyul"
+                  "#inzetw"
                 ],
                 "style": {
                   "flex": "1",
@@ -3712,7 +3320,193 @@
               },
               {
                 "selectors": [
-                  "#ijexzk"
+                  "#ikpqfd"
+                ],
+                "style": {
+                  "display": "flex",
+                  "height": "100vh",
+                  "font-family": "Arial, sans-serif"
+                }
+              },
+              {
+                "selectors": [
+                  "#imegjy"
+                ],
+                "style": {
+                  "margin-top": "0",
+                  "font-size": "24px",
+                  "margin-bottom": "30px",
+                  "font-weight": "bold"
+                }
+              },
+              {
+                "selectors": [
+                  "#ijqjph"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#iq26vh"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ib4o2g"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ivhlth"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "rgba(255,255,255,0.2)",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ijtogn"
+                ],
+                "style": {
+                  "display": "flex",
+                  "flex-direction": "column",
+                  "flex": "1"
+                }
+              },
+              {
+                "selectors": [
+                  "#ip956p"
+                ],
+                "style": {
+                  "margin-top": "auto",
+                  "padding-top": "20px",
+                  "border-top": "1px solid rgba(255,255,255,0.2)",
+                  "font-size": "11px",
+                  "opacity": "0.8",
+                  "text-align": "center"
+                }
+              },
+              {
+                "selectors": [
+                  "#itvnpf"
+                ],
+                "style": {
+                  "width": "250px",
+                  "background": "linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)",
+                  "color": "white",
+                  "padding": "20px",
+                  "overflow-y": "auto",
+                  "display": "flex",
+                  "flex-direction": "column"
+                }
+              },
+              {
+                "selectors": [
+                  "#ir8ocj"
+                ],
+                "style": {
+                  "margin-top": "0",
+                  "color": "#333",
+                  "font-size": "32px",
+                  "margin-bottom": "10px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ivuy2f"
+                ],
+                "style": {
+                  "color": "#666",
+                  "margin-bottom": "30px"
+                }
+              },
+              {
+                "selectors": [
+                  "#table-user-5"
+                ],
+                "style": {
+                  "width": "100%",
+                  "min-height": "400px"
+                }
+              },
+              {
+                "selectors": [
+                  "#i2w16z"
+                ],
+                "style": {
+                  "display": "inline-flex",
+                  "align-items": "center",
+                  "padding": "6px 14px",
+                  "background": "linear-gradient(90deg, #2563eb 0%, #1e40af 100%)",
+                  "color": "#fff",
+                  "text-decoration": "none",
+                  "border-radius": "4px",
+                  "font-size": "13px",
+                  "font-weight": "600",
+                  "letter-spacing": "0.01em",
+                  "cursor": "pointer",
+                  "border": "none",
+                  "box-shadow": "0 1px 4px rgba(37,99,235,0.10)",
+                  "transition": "background 0.2s"
+                }
+              },
+              {
+                "selectors": [
+                  "#i873fg"
+                ],
+                "style": {
+                  "margin-top": "20px",
+                  "display": "flex",
+                  "gap": "10px",
+                  "flex-wrap": "wrap"
+                }
+              },
+              {
+                "selectors": [
+                  "#ih32zl"
+                ],
+                "style": {
+                  "flex": "1",
+                  "padding": "40px",
+                  "overflow-y": "auto",
+                  "background": "#f5f5f5"
+                }
+              },
+              {
+                "selectors": [
+                  "#id0ihy"
                 ],
                 "style": {
                   "display": "flex",
@@ -3725,7 +3519,7 @@
             "symbols": [],
             "version": "0.21.13"
           },
-          "lastUpdate": "2026-11-22T12:23:22.459Z"
+          "lastUpdate": "2026-11-22T13:18:15.962Z"
         }
       ],
       "AgentDiagram": [
@@ -3801,6 +3595,10 @@
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-12T18:50:00Z"
       },
+      "attr_0xo3i3q81_mwrtel4b_p8g": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T13:19:05Z"
+      },
       "attr_14j1w51bg_mwrsttyt_6c0": {
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-22T12:25:19Z"
@@ -3808,6 +3606,14 @@
       "attr_3hhxh62ac_mwrt3tm6_vnv": {
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-22T12:25:19Z"
+      },
+      "attr_7wparxofk_mwrtel4b_xgw": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T13:19:05Z"
+      },
+      "attr_dnwef83qi_mwrtel4b_eyk": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T13:19:05Z"
       },
       "attr_dt1aw7m65_mwrsttyt_kzk": {
         "addedBy": "fabsi-IDC",
@@ -3817,6 +3623,10 @@
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-22T12:25:19Z"
       },
+      "attr_jfxef1rid_mwrtel4b_o6h": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T13:19:05Z"
+      },
       "attr_js697j64q_mwrsttyt_mcg": {
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-22T12:25:19Z"
@@ -3824,6 +3634,14 @@
       "attr_w5bpht84e_mwrsttyt_zpi": {
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-22T12:25:19Z"
+      },
+      "class_n86tmatqd_mwrtel4b_c52": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T13:19:05Z"
+      },
+      "class_wqah4y5hu_mwrtel4b_h5x": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T13:19:05Z"
       },
       "class_xebn6s64u_mwrt3tm6_o9p": {
         "addedBy": "fabsi-IDC",
@@ -3837,6 +3655,10 @@
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-22T12:25:19Z"
       },
+      "method_8j70capyv_mwrtel4b_oet": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T13:19:05Z"
+      },
       "method_q42piav36_mw4zqmk6_srk": {
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-06T13:18:40Z"
@@ -3848,6 +3670,14 @@
       "rel_da1loiw4a_mwrt3tm7_avu": {
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-22T12:25:19Z"
+      },
+      "rel_dpd3hv4zk_mwrtel4c_6s8": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T13:19:05Z"
+      },
+      "rel_quatgczor_mwrtel4b_ebr": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T13:19:05Z"
       }
     },
     "assistantConversation": {
@@ -3871,12 +3701,20 @@
         {
           "role": "assistant",
           "content": "Added the **Project** class with attributes: `name`. (applied 2 changes total)."
+        },
+        {
+          "role": "user",
+          "content": "can you add a User that consists of a Name and a List of Projects where he eiter hast the Role \"Member\" or the Role  \"Manager\" The user should only be able to edit the Projekt, If he has the Manager Role"
+        },
+        {
+          "role": "assistant",
+          "content": "Added classes: **User**, **UserRole**."
         }
       ],
-      "updatedAt": "2026-11-22T12:22:00.381Z"
+      "updatedAt": "2026-11-22T12:30:22.594Z"
     }
   },
-  "exportedAt": "2026-11-22T12:25:19.125Z",
+  "exportedAt": "2026-11-22T13:19:04.463Z",
   "version": "2.0.0",
   "editorVersion": "8.9.4"
 }

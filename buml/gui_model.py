@@ -13,12 +13,22 @@ from besser.BUML.metamodel.structural import (
 )
 import datetime
 
+# Enumerations
+UserRole: Enumeration = Enumeration(
+    name="UserRole",
+    literals={
+            EnumerationLiteral(name="Member"),
+			EnumerationLiteral(name="Manager")
+    }
+)
+
 # Classes
 HelloWorld = Class(name="HelloWorld")
 TimeService = Class(name="TimeService")
 veryImportantClass = Class(name="veryImportantClass")
 Appointment = Class(name="Appointment")
 Project = Class(name="Project")
+User = Class(name="User")
 
 # HelloWorld class attributes and methods
 HelloWorld_id: Property = Property(name="id", type=IntegerType, visibility="private", is_external_id=True)
@@ -49,6 +59,13 @@ Appointment.attributes={Appointment_description, Appointment_endTime, Appointmen
 Project_name: Property = Property(name="name", type=StringType, visibility="private")
 Project.attributes={Project_name}
 
+# User class attributes and methods
+User_name: Property = Property(name="name", type=StringType, visibility="private")
+User_role: Property = Property(name="role", type=UserRole, visibility="private")
+User_m_editProject: Method = Method(name="editProject", parameters=[Parameter(name='project', type=Project)], type=AnyType, implementation_type=MethodImplementationType.NONE)
+User.attributes={User_name, User_role}
+User.methods={User_m_editProject}
+
 # Relationships
 Project_Appointment: BinaryAssociation = BinaryAssociation(
     name="Project_Appointment",
@@ -57,12 +74,19 @@ Project_Appointment: BinaryAssociation = BinaryAssociation(
         Property(name="appointment", type=Appointment, multiplicity=Multiplicity(0, 9999))
     }
 )
+User_Project: BinaryAssociation = BinaryAssociation(
+    name="User_Project",
+    ends={
+        Property(name="user", type=User, multiplicity=Multiplicity(0, 9999)),
+        Property(name="project", type=Project, multiplicity=Multiplicity(0, 9999))
+    }
+)
 
 # Domain Model
 domain_model = DomainModel(
     name="Class_Diagram",
-    types={HelloWorld, TimeService, veryImportantClass, Appointment, Project},
-    associations={Project_Appointment},
+    types={HelloWorld, TimeService, veryImportantClass, Appointment, Project, User, UserRole},
+    associations={Project_Appointment, User_Project},
     generalizations=set(),
     metadata=None
 )
@@ -101,122 +125,111 @@ from besser.utilities.buml_code_builder.common import (
 # Screen: wrapper
 wrapper = Screen(name="wrapper", description="HelloWorld", view_elements=set(), is_main_page=True, route_path="/helloworld", screen_size="Medium")
 wrapper.component_id = "page-helloworld-0"
-i3kkp = Text(
-    name="i3kkp",
+itpmx = Text(
+    name="itpmx",
     content="BESSER",
     description="Text element",
     styling=Styling(size=Size(font_size="24px", font_weight="bold", margin_top="0", margin_bottom="30px"), color=Color(color_palette="default")),
-    component_id="i3kkp",
+    component_id="itpmx",
     tag_name="h2",
     display_order=0,
-    custom_attributes={"id": "i3kkp"}
+    custom_attributes={"id": "itpmx"}
 )
-itfpd = Link(
-    name="itfpd",
+ijasp = Link(
+    name="ijasp",
     description="Link element",
     label="HelloWorld",
     url="/helloworld",
     styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="rgba(255,255,255,0.2)", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="itfpd",
+    component_id="ijasp",
     tag_name="a",
     display_order=0,
-    custom_attributes={"href": "/helloworld", "id": "itfpd"}
+    custom_attributes={"href": "/helloworld", "id": "ijasp"}
 )
-il4dq = Link(
-    name="il4dq",
-    description="Link element",
-    label="TimeService",
-    url="/timeservice",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="il4dq",
-    tag_name="a",
-    display_order=1,
-    custom_attributes={"href": "/timeservice", "id": "il4dq"}
-)
-ipws8 = Link(
-    name="ipws8",
-    description="Link element",
-    label="veryImportantClass",
-    url="/veryimportantclass",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ipws8",
-    tag_name="a",
-    display_order=2,
-    custom_attributes={"href": "/veryimportantclass", "id": "ipws8"}
-)
-ickf7 = Link(
-    name="ickf7",
+istti = Link(
+    name="istti",
     description="Link element",
     label="Appointment",
     url="/appointment",
     styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ickf7",
+    component_id="istti",
     tag_name="a",
-    display_order=3,
-    custom_attributes={"href": "/appointment", "id": "ickf7"}
+    display_order=1,
+    custom_attributes={"href": "/appointment", "id": "istti"}
 )
-ix68j = Link(
-    name="ix68j",
+itf8l = Link(
+    name="itf8l",
     description="Link element",
     label="Project",
     url="/project",
     styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ix68j",
+    component_id="itf8l",
     tag_name="a",
-    display_order=4,
-    custom_attributes={"href": "/project", "id": "ix68j"}
+    display_order=2,
+    custom_attributes={"href": "/project", "id": "itf8l"}
 )
-i0z1q = ViewContainer(
-    name="i0z1q",
+ilk0v = Link(
+    name="ilk0v",
+    description="Link element",
+    label="User",
+    url="/user",
+    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
+    component_id="ilk0v",
+    tag_name="a",
+    display_order=3,
+    custom_attributes={"href": "/user", "id": "ilk0v"}
+)
+iusmj = ViewContainer(
+    name="iusmj",
     description=" component",
-    view_elements={itfpd, il4dq, ipws8, ickf7, ix68j},
+    view_elements={ijasp, istti, itf8l, ilk0v},
     styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")),
-    component_id="i0z1q",
+    component_id="iusmj",
     display_order=1,
-    custom_attributes={"id": "i0z1q"}
+    custom_attributes={"id": "iusmj"}
 )
-i0z1q_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")
-i0z1q.layout = i0z1q_layout
-iljjz = Text(
-    name="iljjz",
+iusmj_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")
+iusmj.layout = iusmj_layout
+i6uz2 = Text(
+    name="i6uz2",
     content="© 2026 BESSER. All rights reserved.",
     description="Text element",
     styling=Styling(size=Size(font_size="11px", padding_top="20px", margin_top="auto"), position=Position(alignment=Alignment.CENTER), color=Color(opacity="0.8", color_palette="default", border_top="1px solid rgba(255,255,255,0.2)")),
-    component_id="iljjz",
+    component_id="i6uz2",
     display_order=2,
-    custom_attributes={"id": "iljjz"}
+    custom_attributes={"id": "i6uz2"}
 )
-icmdy = ViewContainer(
-    name="icmdy",
+i8tkl = ViewContainer(
+    name="i8tkl",
     description="nav container",
-    view_elements={i3kkp, i0z1q, iljjz},
+    view_elements={itpmx, iusmj, i6uz2},
     styling=Styling(size=Size(width="250px", padding="20px", unit_size=UnitSize.PIXELS), position=Position(display="flex", overflow_y="auto"), color=Color(background_color="linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)", text_color="white", color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column")),
-    component_id="icmdy",
+    component_id="i8tkl",
     tag_name="nav",
     display_order=0,
-    custom_attributes={"id": "icmdy"}
+    custom_attributes={"id": "i8tkl"}
 )
-icmdy_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column")
-icmdy.layout = icmdy_layout
-iye2h = Text(
-    name="iye2h",
+i8tkl_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column")
+i8tkl.layout = i8tkl_layout
+ihltv = Text(
+    name="ihltv",
     content="HelloWorld",
     description="Text element",
     styling=Styling(size=Size(font_size="32px", margin_top="0", margin_bottom="10px"), color=Color(text_color="#333", color_palette="default")),
-    component_id="iye2h",
+    component_id="ihltv",
     tag_name="h1",
     display_order=0,
-    custom_attributes={"id": "iye2h"}
+    custom_attributes={"id": "ihltv"}
 )
-izhpj = Text(
-    name="izhpj",
+idreg = Text(
+    name="idreg",
     content="Manage HelloWorld data",
     description="Text element",
     styling=Styling(size=Size(margin_bottom="30px"), color=Color(text_color="#666", color_palette="default")),
-    component_id="izhpj",
+    component_id="idreg",
     tag_name="p",
     display_order=1,
-    custom_attributes={"id": "izhpj"}
+    custom_attributes={"id": "idreg"}
 )
 table_helloworld_0_col_0 = FieldColumn(label="Id", field=HelloWorld_id)
 table_helloworld_0_col_1 = FieldColumn(label="Name", field=HelloWorld_Name)
@@ -230,7 +243,7 @@ table_helloworld_0 = Table(
     rows_per_page=5,
     action_buttons=True,
     columns=[table_helloworld_0_col_0, table_helloworld_0_col_1],
-    styling=Styling(size=Size(width="100%", min_height="400px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50")),
+    styling=Styling(color=Color(color_palette="default", primary_color="#2c3e50")),
     component_id="table-helloworld-0",
     display_order=2,
     custom_attributes={"chart-color": "#2c3e50", "chart-title": "HelloWorld List", "data-source": "class_kjy9sn6ld_mw0vgnrg_m1e", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": [{'field': 'id', 'label': 'Id', 'columnType': 'field', '_expanded': False}, {'field': 'Name', 'label': 'Name', 'columnType': 'field', '_expanded': False}], "id": "table-helloworld-0", "filter": ""}
@@ -241,8 +254,8 @@ try:
 except NameError:
     pass
 table_helloworld_0.data_binding = table_helloworld_0_binding
-igjvg = Button(
-    name="igjvg",
+idt0f = Button(
+    name="idt0f",
     description="Button component",
     label="showHelloWorld",
     buttonType=ButtonType.CustomizableButton,
@@ -251,14 +264,14 @@ igjvg = Button(
     instance_source="table-helloworld-0",
     is_instance_method=True,
     styling=Styling(size=Size(padding="6px 14px", font_size="13px", font_weight="600", text_decoration="none", letter_spacing="0.01em"), position=Position(display="inline-flex", cursor="pointer", transition="background 0.2s"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none", box_shadow="0 1px 4px rgba(37,99,235,0.10)"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
-    component_id="igjvg",
+    component_id="idt0f",
     tag_name="button",
     display_order=0,
     css_classes=["action-button-component"],
-    custom_attributes={"type": "button", "data-button-label": "showHelloWorld", "data-action-type": "run-method", "data-method-class": "class_kjy9sn6ld_mw0vgnrg_m1e", "data-method": "method_zg5zggc0r_mw0vgnrg_d4h", "data-instance-source": "table-helloworld-0", "id": "igjvg"}
+    custom_attributes={"type": "button", "data-button-label": "showHelloWorld", "data-action-type": "run-method", "data-method-class": "class_kjy9sn6ld_mw0vgnrg_m1e", "data-method": "method_zg5zggc0r_mw0vgnrg_d4h", "data-instance-source": "table-helloworld-0", "id": "idt0f"}
 )
-i8y3r = Button(
-    name="i8y3r",
+ijhpz = Button(
+    name="ijhpz",
     description="Button component",
     label="+ showCurrentTime",
     buttonType=ButtonType.CustomizableButton,
@@ -267,532 +280,157 @@ i8y3r = Button(
     instance_source="table-helloworld-0",
     is_instance_method=True,
     styling=Styling(size=Size(padding="6px 14px", font_size="13px", font_weight="600", text_decoration="none", letter_spacing="0.01em"), position=Position(display="inline-flex", cursor="pointer", transition="background 0.2s"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none", box_shadow="0 1px 4px rgba(37,99,235,0.10)"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
-    component_id="i8y3r",
+    component_id="ijhpz",
     tag_name="button",
     display_order=1,
     css_classes=["action-button-component"],
-    custom_attributes={"type": "button", "data-button-label": "+ showCurrentTime", "data-action-type": "run-method", "data-method-class": "class_kjy9sn6ld_mw0vgnrg_m1e", "data-method": "method_q42piav36_mw4zqmk6_srk", "data-instance-source": "table-helloworld-0", "id": "i8y3r"}
+    custom_attributes={"type": "button", "data-button-label": "+ showCurrentTime", "data-action-type": "run-method", "data-method-class": "class_kjy9sn6ld_mw0vgnrg_m1e", "data-method": "method_q42piav36_mw4zqmk6_srk", "data-instance-source": "table-helloworld-0", "id": "ijhpz"}
 )
-ivzvh = ViewContainer(
-    name="ivzvh",
+iw2ba = ViewContainer(
+    name="iw2ba",
     description=" component",
-    view_elements={igjvg, i8y3r},
+    view_elements={idt0f, ijhpz},
     styling=Styling(size=Size(margin_top="20px"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="10px")),
-    component_id="ivzvh",
+    component_id="iw2ba",
     display_order=3,
-    custom_attributes={"id": "ivzvh"}
+    custom_attributes={"id": "iw2ba"}
 )
-ivzvh_layout = Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="10px")
-ivzvh.layout = ivzvh_layout
-il4b3 = ViewContainer(
-    name="il4b3",
+iw2ba_layout = Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="10px")
+iw2ba.layout = iw2ba_layout
+i7a7i = ViewContainer(
+    name="i7a7i",
     description="main container",
-    view_elements={iye2h, izhpj, table_helloworld_0, ivzvh},
+    view_elements={ihltv, idreg, table_helloworld_0, iw2ba},
     styling=Styling(size=Size(padding="40px"), position=Position(overflow_y="auto"), color=Color(background_color="#f5f5f5", color_palette="default"), layout=Layout(flex="1")),
-    component_id="il4b3",
+    component_id="i7a7i",
     tag_name="main",
     display_order=1,
-    custom_attributes={"id": "il4b3"}
+    custom_attributes={"id": "i7a7i"}
 )
-il4b3_layout = Layout(flex="1")
-il4b3.layout = il4b3_layout
-i8106 = ViewContainer(
-    name="i8106",
+i7a7i_layout = Layout(flex="1")
+i7a7i.layout = i7a7i_layout
+inyxn = ViewContainer(
+    name="inyxn",
     description=" component",
-    view_elements={icmdy, il4b3},
+    view_elements={i8tkl, i7a7i},
     styling=Styling(size=Size(height="100vh", font_family="Arial, sans-serif"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX)),
-    component_id="i8106",
+    component_id="inyxn",
     display_order=0,
-    custom_attributes={"id": "i8106"}
+    custom_attributes={"id": "inyxn"}
 )
-i8106_layout = Layout(layout_type=LayoutType.FLEX)
-i8106.layout = i8106_layout
-wrapper.view_elements = {i8106}
+inyxn_layout = Layout(layout_type=LayoutType.FLEX)
+inyxn.layout = inyxn_layout
+wrapper.view_elements = {inyxn}
 
 
 # Screen: wrapper_2
-wrapper_2 = Screen(name="wrapper_2", description="TimeService", view_elements=set(), route_path="/timeservice", screen_size="Medium")
-wrapper_2.component_id = "page-timeservice-1"
-ih6ob = Text(
-    name="ih6ob",
+wrapper_2 = Screen(name="wrapper_2", description="Appointment", view_elements=set(), route_path="/appointment", screen_size="Medium")
+wrapper_2.component_id = "page-appointment-3"
+it47kl = Text(
+    name="it47kl",
     content="BESSER",
     description="Text element",
     styling=Styling(size=Size(font_size="24px", font_weight="bold", margin_top="0", margin_bottom="30px"), color=Color(color_palette="default")),
-    component_id="ih6ob",
+    component_id="it47kl",
     tag_name="h2",
     display_order=0,
-    custom_attributes={"id": "ih6ob"}
+    custom_attributes={"id": "it47kl"}
 )
-iqaqf = Link(
-    name="iqaqf",
+iunw7q = Link(
+    name="iunw7q",
     description="Link element",
     label="HelloWorld",
     url="/helloworld",
     styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="iqaqf",
+    component_id="iunw7q",
     tag_name="a",
     display_order=0,
-    custom_attributes={"href": "/helloworld", "id": "iqaqf"}
+    custom_attributes={"href": "/helloworld", "id": "iunw7q"}
 )
-ihzvy = Link(
-    name="ihzvy",
-    description="Link element",
-    label="TimeService",
-    url="/timeservice",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="rgba(255,255,255,0.2)", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ihzvy",
-    tag_name="a",
-    display_order=1,
-    custom_attributes={"href": "/timeservice", "id": "ihzvy"}
-)
-i44ec = Link(
-    name="i44ec",
-    description="Link element",
-    label="veryImportantClass",
-    url="/veryimportantclass",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="i44ec",
-    tag_name="a",
-    display_order=2,
-    custom_attributes={"href": "/veryimportantclass", "id": "i44ec"}
-)
-i2tjp = Link(
-    name="i2tjp",
-    description="Link element",
-    label="Appointment",
-    url="/appointment",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="i2tjp",
-    tag_name="a",
-    display_order=3,
-    custom_attributes={"href": "/appointment", "id": "i2tjp"}
-)
-ieqb1 = Link(
-    name="ieqb1",
-    description="Link element",
-    label="Project",
-    url="/project",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ieqb1",
-    tag_name="a",
-    display_order=4,
-    custom_attributes={"href": "/project", "id": "ieqb1"}
-)
-ic57j = ViewContainer(
-    name="ic57j",
-    description=" component",
-    view_elements={iqaqf, ihzvy, i44ec, i2tjp, ieqb1},
-    styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")),
-    component_id="ic57j",
-    display_order=1,
-    custom_attributes={"id": "ic57j"}
-)
-ic57j_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")
-ic57j.layout = ic57j_layout
-i2c9k = Text(
-    name="i2c9k",
-    content="© 2026 BESSER. All rights reserved.",
-    description="Text element",
-    styling=Styling(size=Size(font_size="11px", padding_top="20px", margin_top="auto"), position=Position(alignment=Alignment.CENTER), color=Color(opacity="0.8", color_palette="default", border_top="1px solid rgba(255,255,255,0.2)")),
-    component_id="i2c9k",
-    display_order=2,
-    custom_attributes={"id": "i2c9k"}
-)
-i8l3a = ViewContainer(
-    name="i8l3a",
-    description="nav container",
-    view_elements={ih6ob, ic57j, i2c9k},
-    styling=Styling(size=Size(width="250px", padding="20px", unit_size=UnitSize.PIXELS), position=Position(display="flex", overflow_y="auto"), color=Color(background_color="linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)", text_color="white", color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column")),
-    component_id="i8l3a",
-    tag_name="nav",
-    display_order=0,
-    custom_attributes={"id": "i8l3a"}
-)
-i8l3a_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column")
-i8l3a.layout = i8l3a_layout
-iredf = Text(
-    name="iredf",
-    content="TimeService",
-    description="Text element",
-    styling=Styling(size=Size(font_size="32px", margin_top="0", margin_bottom="10px"), color=Color(text_color="#333", color_palette="default")),
-    component_id="iredf",
-    tag_name="h1",
-    display_order=0,
-    custom_attributes={"id": "iredf"}
-)
-i8g3p = Text(
-    name="i8g3p",
-    content="Manage TimeService data",
-    description="Text element",
-    styling=Styling(size=Size(margin_bottom="30px"), color=Color(text_color="#666", color_palette="default")),
-    component_id="i8g3p",
-    tag_name="p",
-    display_order=1,
-    custom_attributes={"id": "i8g3p"}
-)
-table_timeservice_1 = Table(
-    name="table_timeservice_1",
-    title="TimeService List",
-    primary_color="#2c3e50",
-    show_header=True,
-    striped_rows=False,
-    show_pagination=True,
-    rows_per_page=5,
-    action_buttons=True,
-    styling=Styling(size=Size(width="100%", min_height="400px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50")),
-    component_id="table-timeservice-1",
-    display_order=2,
-    css_classes=["has-data-binding"],
-    custom_attributes={"chart-color": "#2c3e50", "chart-title": "TimeService List", "data-source": "class_yj7pqh7vi_mw4zqmk6_dtb", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": [], "id": "table-timeservice-1", "filter": ""}
-)
-table_timeservice_1_binding = None
-try:
-    table_timeservice_1_binding = build_data_binding(domain_model, "TimeService", name="TimeServiceDataBinding")
-except NameError:
-    pass
-table_timeservice_1.data_binding = table_timeservice_1_binding
-iadlb = Button(
-    name="iadlb",
-    description="Button component",
-    label="+ getCurrentTime",
-    buttonType=ButtonType.CustomizableButton,
-    actionType=ButtonActionType.RunMethod,
-    method_btn=TimeService_m_getCurrentTime,
-    instance_source="table-timeservice-1",
-    is_instance_method=True,
-    styling=Styling(size=Size(padding="6px 14px", font_size="13px", font_weight="600", text_decoration="none", letter_spacing="0.01em"), position=Position(display="inline-flex", cursor="pointer", transition="background 0.2s"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none", box_shadow="0 1px 4px rgba(37,99,235,0.10)"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
-    component_id="iadlb",
-    tag_name="button",
-    display_order=0,
-    css_classes=["action-button-component"],
-    custom_attributes={"type": "button", "data-button-label": "+ getCurrentTime", "data-action-type": "run-method", "data-method-class": "class_yj7pqh7vi_mw4zqmk6_dtb", "data-method": "method_ye0hlrs7f_mw4zqmk6_ih6", "data-instance-source": "table-timeservice-1", "id": "iadlb"}
-)
-i5wh3 = ViewContainer(
-    name="i5wh3",
-    description=" component",
-    view_elements={iadlb},
-    styling=Styling(size=Size(margin_top="20px"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="10px")),
-    component_id="i5wh3",
-    display_order=3,
-    custom_attributes={"id": "i5wh3"}
-)
-i5wh3_layout = Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="10px")
-i5wh3.layout = i5wh3_layout
-iuev4 = ViewContainer(
-    name="iuev4",
-    description="main container",
-    view_elements={iredf, i8g3p, table_timeservice_1, i5wh3},
-    styling=Styling(size=Size(padding="40px"), position=Position(overflow_y="auto"), color=Color(background_color="#f5f5f5", color_palette="default"), layout=Layout(flex="1")),
-    component_id="iuev4",
-    tag_name="main",
-    display_order=1,
-    custom_attributes={"id": "iuev4"}
-)
-iuev4_layout = Layout(flex="1")
-iuev4.layout = iuev4_layout
-iat5f = ViewContainer(
-    name="iat5f",
-    description=" component",
-    view_elements={i8l3a, iuev4},
-    styling=Styling(size=Size(height="100vh", font_family="Arial, sans-serif"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX)),
-    component_id="iat5f",
-    display_order=0,
-    custom_attributes={"id": "iat5f"}
-)
-iat5f_layout = Layout(layout_type=LayoutType.FLEX)
-iat5f.layout = iat5f_layout
-wrapper_2.view_elements = {iat5f}
-
-
-# Screen: wrapper_3
-wrapper_3 = Screen(name="wrapper_3", description="veryImportantClass", view_elements=set(), route_path="/veryimportantclass", screen_size="Medium")
-wrapper_3.component_id = "page-veryimportantclass-2"
-ipihh = Text(
-    name="ipihh",
-    content="BESSER",
-    description="Text element",
-    styling=Styling(size=Size(font_size="24px", font_weight="bold", margin_top="0", margin_bottom="30px"), color=Color(color_palette="default")),
-    component_id="ipihh",
-    tag_name="h2",
-    display_order=0,
-    custom_attributes={"id": "ipihh"}
-)
-i7ayc = Link(
-    name="i7ayc",
-    description="Link element",
-    label="HelloWorld",
-    url="/helloworld",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="i7ayc",
-    tag_name="a",
-    display_order=0,
-    custom_attributes={"href": "/helloworld", "id": "i7ayc"}
-)
-is2dk = Link(
-    name="is2dk",
-    description="Link element",
-    label="TimeService",
-    url="/timeservice",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="is2dk",
-    tag_name="a",
-    display_order=1,
-    custom_attributes={"href": "/timeservice", "id": "is2dk"}
-)
-ie4ft = Link(
-    name="ie4ft",
-    description="Link element",
-    label="veryImportantClass",
-    url="/veryimportantclass",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="rgba(255,255,255,0.2)", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ie4ft",
-    tag_name="a",
-    display_order=2,
-    custom_attributes={"href": "/veryimportantclass", "id": "ie4ft"}
-)
-itpe4 = Link(
-    name="itpe4",
-    description="Link element",
-    label="Appointment",
-    url="/appointment",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="itpe4",
-    tag_name="a",
-    display_order=3,
-    custom_attributes={"href": "/appointment", "id": "itpe4"}
-)
-ih4mv = Link(
-    name="ih4mv",
-    description="Link element",
-    label="Project",
-    url="/project",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ih4mv",
-    tag_name="a",
-    display_order=4,
-    custom_attributes={"href": "/project", "id": "ih4mv"}
-)
-iazdl = ViewContainer(
-    name="iazdl",
-    description=" component",
-    view_elements={i7ayc, is2dk, ie4ft, itpe4, ih4mv},
-    styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")),
-    component_id="iazdl",
-    display_order=1,
-    custom_attributes={"id": "iazdl"}
-)
-iazdl_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")
-iazdl.layout = iazdl_layout
-ii5xh = Text(
-    name="ii5xh",
-    content="© 2026 BESSER. All rights reserved.",
-    description="Text element",
-    styling=Styling(size=Size(font_size="11px", padding_top="20px", margin_top="auto"), position=Position(alignment=Alignment.CENTER), color=Color(opacity="0.8", color_palette="default", border_top="1px solid rgba(255,255,255,0.2)")),
-    component_id="ii5xh",
-    display_order=2,
-    custom_attributes={"id": "ii5xh"}
-)
-iwvbs = ViewContainer(
-    name="iwvbs",
-    description="nav container",
-    view_elements={ipihh, iazdl, ii5xh},
-    styling=Styling(size=Size(width="250px", padding="20px", unit_size=UnitSize.PIXELS), position=Position(display="flex", overflow_y="auto"), color=Color(background_color="linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)", text_color="white", color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column")),
-    component_id="iwvbs",
-    tag_name="nav",
-    display_order=0,
-    custom_attributes={"id": "iwvbs"}
-)
-iwvbs_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column")
-iwvbs.layout = iwvbs_layout
-iqwusc = Text(
-    name="iqwusc",
-    content="veryImportantClass",
-    description="Text element",
-    styling=Styling(size=Size(font_size="32px", margin_top="0", margin_bottom="10px"), color=Color(text_color="#333", color_palette="default")),
-    component_id="iqwusc",
-    tag_name="h1",
-    display_order=0,
-    custom_attributes={"id": "iqwusc"}
-)
-io3qw8 = Text(
-    name="io3qw8",
-    content="Manage veryImportantClass data",
-    description="Text element",
-    styling=Styling(size=Size(margin_bottom="30px"), color=Color(text_color="#666", color_palette="default")),
-    component_id="io3qw8",
-    tag_name="p",
-    display_order=1,
-    custom_attributes={"id": "io3qw8"}
-)
-table_veryimportantclass_2_col_0 = FieldColumn(label="UpdateIsBugged", field=veryImportantClass_UpdateIsBugged)
-table_veryimportantclass_2_col_1 = FieldColumn(label="ThisClassIsForDemonstrationOnly", field=veryImportantClass_ThisClassIsForDemonstrationOnly)
-table_veryimportantclass_2 = Table(
-    name="table_veryimportantclass_2",
-    title="veryImportantClass List",
-    primary_color="#2c3e50",
-    show_header=True,
-    striped_rows=False,
-    show_pagination=True,
-    rows_per_page=5,
-    action_buttons=True,
-    columns=[table_veryimportantclass_2_col_0, table_veryimportantclass_2_col_1],
-    styling=Styling(size=Size(width="100%", min_height="400px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50")),
-    component_id="table-veryimportantclass-2",
-    display_order=2,
-    css_classes=["has-data-binding"],
-    custom_attributes={"chart-color": "#2c3e50", "chart-title": "veryImportantClass List", "data-source": "888ba94d-b774-4751-a7b4-b9065d249521", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": [{'field': 'UpdateIsBugged', 'label': 'UpdateIsBugged', 'columnType': 'field', '_expanded': False}, {'field': 'ThisClassIsForDemonstrationOnly', 'label': 'ThisClassIsForDemonstrationOnly', 'columnType': 'field', '_expanded': False}], "id": "table-veryimportantclass-2", "filter": ""}
-)
-table_veryimportantclass_2_binding = None
-try:
-    table_veryimportantclass_2_binding = build_data_binding(domain_model, "veryImportantClass", name="veryImportantClassDataBinding")
-except NameError:
-    pass
-table_veryimportantclass_2.data_binding = table_veryimportantclass_2_binding
-i079oa = ViewContainer(
-    name="i079oa",
-    description="main container",
-    view_elements={iqwusc, io3qw8, table_veryimportantclass_2},
-    styling=Styling(size=Size(padding="40px"), position=Position(overflow_y="auto"), color=Color(background_color="#f5f5f5", color_palette="default"), layout=Layout(flex="1")),
-    component_id="i079oa",
-    tag_name="main",
-    display_order=1,
-    custom_attributes={"id": "i079oa"}
-)
-i079oa_layout = Layout(flex="1")
-i079oa.layout = i079oa_layout
-ig01p = ViewContainer(
-    name="ig01p",
-    description=" component",
-    view_elements={iwvbs, i079oa},
-    styling=Styling(size=Size(height="100vh", font_family="Arial, sans-serif"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX)),
-    component_id="ig01p",
-    display_order=0,
-    custom_attributes={"id": "ig01p"}
-)
-ig01p_layout = Layout(layout_type=LayoutType.FLEX)
-ig01p.layout = ig01p_layout
-wrapper_3.view_elements = {ig01p}
-
-
-# Screen: wrapper_4
-wrapper_4 = Screen(name="wrapper_4", description="Appointment", view_elements=set(), route_path="/appointment", screen_size="Medium")
-wrapper_4.component_id = "page-appointment-3"
-iogi8a = Text(
-    name="iogi8a",
-    content="BESSER",
-    description="Text element",
-    styling=Styling(size=Size(font_size="24px", font_weight="bold", margin_top="0", margin_bottom="30px"), color=Color(color_palette="default")),
-    component_id="iogi8a",
-    tag_name="h2",
-    display_order=0,
-    custom_attributes={"id": "iogi8a"}
-)
-ik0wd2 = Link(
-    name="ik0wd2",
-    description="Link element",
-    label="HelloWorld",
-    url="/helloworld",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ik0wd2",
-    tag_name="a",
-    display_order=0,
-    custom_attributes={"href": "/helloworld", "id": "ik0wd2"}
-)
-i0494o = Link(
-    name="i0494o",
-    description="Link element",
-    label="TimeService",
-    url="/timeservice",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="i0494o",
-    tag_name="a",
-    display_order=1,
-    custom_attributes={"href": "/timeservice", "id": "i0494o"}
-)
-iuel4h = Link(
-    name="iuel4h",
-    description="Link element",
-    label="veryImportantClass",
-    url="/veryimportantclass",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="iuel4h",
-    tag_name="a",
-    display_order=2,
-    custom_attributes={"href": "/veryimportantclass", "id": "iuel4h"}
-)
-irzcdt = Link(
-    name="irzcdt",
+irubdn = Link(
+    name="irubdn",
     description="Link element",
     label="Appointment",
     url="/appointment",
     styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="rgba(255,255,255,0.2)", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="irzcdt",
+    component_id="irubdn",
     tag_name="a",
-    display_order=3,
-    custom_attributes={"href": "/appointment", "id": "irzcdt"}
+    display_order=1,
+    custom_attributes={"href": "/appointment", "id": "irubdn"}
 )
-iprz57 = Link(
-    name="iprz57",
+iszvua = Link(
+    name="iszvua",
     description="Link element",
     label="Project",
     url="/project",
     styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="iprz57",
+    component_id="iszvua",
     tag_name="a",
-    display_order=4,
-    custom_attributes={"href": "/project", "id": "iprz57"}
+    display_order=2,
+    custom_attributes={"href": "/project", "id": "iszvua"}
 )
-ietwse = ViewContainer(
-    name="ietwse",
+i8om83 = Link(
+    name="i8om83",
+    description="Link element",
+    label="User",
+    url="/user",
+    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
+    component_id="i8om83",
+    tag_name="a",
+    display_order=3,
+    custom_attributes={"href": "/user", "id": "i8om83"}
+)
+ifa6w2 = ViewContainer(
+    name="ifa6w2",
     description=" component",
-    view_elements={ik0wd2, i0494o, iuel4h, irzcdt, iprz57},
+    view_elements={iunw7q, irubdn, iszvua, i8om83},
     styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")),
-    component_id="ietwse",
+    component_id="ifa6w2",
     display_order=1,
-    custom_attributes={"id": "ietwse"}
+    custom_attributes={"id": "ifa6w2"}
 )
-ietwse_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")
-ietwse.layout = ietwse_layout
-im8prw = Text(
-    name="im8prw",
+ifa6w2_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")
+ifa6w2.layout = ifa6w2_layout
+i1dvvh = Text(
+    name="i1dvvh",
     content="© 2026 BESSER. All rights reserved.",
     description="Text element",
     styling=Styling(size=Size(font_size="11px", padding_top="20px", margin_top="auto"), position=Position(alignment=Alignment.CENTER), color=Color(opacity="0.8", color_palette="default", border_top="1px solid rgba(255,255,255,0.2)")),
-    component_id="im8prw",
+    component_id="i1dvvh",
     display_order=2,
-    custom_attributes={"id": "im8prw"}
+    custom_attributes={"id": "i1dvvh"}
 )
-izufli = ViewContainer(
-    name="izufli",
+irmslp = ViewContainer(
+    name="irmslp",
     description="nav container",
-    view_elements={iogi8a, ietwse, im8prw},
+    view_elements={it47kl, ifa6w2, i1dvvh},
     styling=Styling(size=Size(width="250px", padding="20px", unit_size=UnitSize.PIXELS), position=Position(display="flex", overflow_y="auto"), color=Color(background_color="linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)", text_color="white", color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column")),
-    component_id="izufli",
+    component_id="irmslp",
     tag_name="nav",
     display_order=0,
-    custom_attributes={"id": "izufli"}
+    custom_attributes={"id": "irmslp"}
 )
-izufli_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column")
-izufli.layout = izufli_layout
-i41wd8 = Text(
-    name="i41wd8",
+irmslp_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column")
+irmslp.layout = irmslp_layout
+ikr5qk = Text(
+    name="ikr5qk",
     content="Appointment",
     description="Text element",
     styling=Styling(size=Size(font_size="32px", margin_top="0", margin_bottom="10px"), color=Color(text_color="#333", color_palette="default")),
-    component_id="i41wd8",
+    component_id="ikr5qk",
     tag_name="h1",
     display_order=0,
-    custom_attributes={"id": "i41wd8"}
+    custom_attributes={"id": "ikr5qk"}
 )
-idbwtf = Text(
-    name="idbwtf",
+i33qyp = Text(
+    name="i33qyp",
     content="Manage Appointment data",
     description="Text element",
     styling=Styling(size=Size(margin_bottom="30px"), color=Color(text_color="#666", color_palette="default")),
-    component_id="idbwtf",
+    component_id="i33qyp",
     tag_name="p",
     display_order=1,
-    custom_attributes={"id": "idbwtf"}
+    custom_attributes={"id": "i33qyp"}
 )
 table_appointment_3_col_0 = FieldColumn(label="Name", field=Appointment_name)
 table_appointment_3_col_1 = FieldColumn(label="Description", field=Appointment_description)
@@ -823,155 +461,146 @@ try:
 except NameError:
     pass
 table_appointment_3.data_binding = table_appointment_3_binding
-i46pp1 = ViewContainer(
-    name="i46pp1",
+it9qwy = ViewContainer(
+    name="it9qwy",
     description="main container",
-    view_elements={i41wd8, idbwtf, table_appointment_3},
+    view_elements={ikr5qk, i33qyp, table_appointment_3},
     styling=Styling(size=Size(padding="40px"), position=Position(overflow_y="auto"), color=Color(background_color="#f5f5f5", color_palette="default"), layout=Layout(flex="1")),
-    component_id="i46pp1",
+    component_id="it9qwy",
     tag_name="main",
     display_order=1,
-    custom_attributes={"id": "i46pp1"}
+    custom_attributes={"id": "it9qwy"}
 )
-i46pp1_layout = Layout(flex="1")
-i46pp1.layout = i46pp1_layout
-i7877g = ViewContainer(
-    name="i7877g",
+it9qwy_layout = Layout(flex="1")
+it9qwy.layout = it9qwy_layout
+i2tllx = ViewContainer(
+    name="i2tllx",
     description=" component",
-    view_elements={izufli, i46pp1},
+    view_elements={irmslp, it9qwy},
     styling=Styling(size=Size(height="100vh", font_family="Arial, sans-serif"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX)),
-    component_id="i7877g",
+    component_id="i2tllx",
     display_order=0,
-    custom_attributes={"id": "i7877g"}
+    custom_attributes={"id": "i2tllx"}
 )
-i7877g_layout = Layout(layout_type=LayoutType.FLEX)
-i7877g.layout = i7877g_layout
-wrapper_4.view_elements = {i7877g}
+i2tllx_layout = Layout(layout_type=LayoutType.FLEX)
+i2tllx.layout = i2tllx_layout
+wrapper_2.view_elements = {i2tllx}
 
 
-# Screen: wrapper_5
-wrapper_5 = Screen(name="wrapper_5", description="Project", view_elements=set(), route_path="/project", screen_size="Medium")
-wrapper_5.component_id = "page-project-4"
-iap6xa = Text(
-    name="iap6xa",
+# Screen: wrapper_3
+wrapper_3 = Screen(name="wrapper_3", description="Project", view_elements=set(), route_path="/project", screen_size="Medium")
+wrapper_3.component_id = "page-project-4"
+iiucwf = Text(
+    name="iiucwf",
     content="BESSER",
     description="Text element",
     styling=Styling(size=Size(font_size="24px", font_weight="bold", margin_top="0", margin_bottom="30px"), color=Color(color_palette="default")),
-    component_id="iap6xa",
+    component_id="iiucwf",
     tag_name="h2",
     display_order=0,
-    custom_attributes={"id": "iap6xa"}
+    custom_attributes={"id": "iiucwf"}
 )
-ipxk5h = Link(
-    name="ipxk5h",
+i0jeuy = Link(
+    name="i0jeuy",
     description="Link element",
     label="HelloWorld",
     url="/helloworld",
     styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ipxk5h",
+    component_id="i0jeuy",
     tag_name="a",
     display_order=0,
-    custom_attributes={"href": "/helloworld", "id": "ipxk5h"}
+    custom_attributes={"href": "/helloworld", "id": "i0jeuy"}
 )
-ieeryy = Link(
-    name="ieeryy",
-    description="Link element",
-    label="TimeService",
-    url="/timeservice",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ieeryy",
-    tag_name="a",
-    display_order=1,
-    custom_attributes={"href": "/timeservice", "id": "ieeryy"}
-)
-ikj25y = Link(
-    name="ikj25y",
-    description="Link element",
-    label="veryImportantClass",
-    url="/veryimportantclass",
-    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ikj25y",
-    tag_name="a",
-    display_order=2,
-    custom_attributes={"href": "/veryimportantclass", "id": "ikj25y"}
-)
-ih9p02 = Link(
-    name="ih9p02",
+iozjef = Link(
+    name="iozjef",
     description="Link element",
     label="Appointment",
     url="/appointment",
     styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="ih9p02",
+    component_id="iozjef",
     tag_name="a",
-    display_order=3,
-    custom_attributes={"href": "/appointment", "id": "ih9p02"}
+    display_order=1,
+    custom_attributes={"href": "/appointment", "id": "iozjef"}
 )
-iqc7km = Link(
-    name="iqc7km",
+ieqmsb = Link(
+    name="ieqmsb",
     description="Link element",
     label="Project",
     url="/project",
     styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="rgba(255,255,255,0.2)", text_color="white", color_palette="default", border_radius="4px")),
-    component_id="iqc7km",
+    component_id="ieqmsb",
     tag_name="a",
-    display_order=4,
-    custom_attributes={"href": "/project", "id": "iqc7km"}
+    display_order=2,
+    custom_attributes={"href": "/project", "id": "ieqmsb"}
 )
-i6v32l = ViewContainer(
-    name="i6v32l",
+ioosnq = Link(
+    name="ioosnq",
+    description="Link element",
+    label="User",
+    url="/user",
+    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
+    component_id="ioosnq",
+    tag_name="a",
+    display_order=3,
+    custom_attributes={"href": "/user", "id": "ioosnq"}
+)
+ir33ck = ViewContainer(
+    name="ir33ck",
     description=" component",
-    view_elements={ipxk5h, ieeryy, ikj25y, ih9p02, iqc7km},
+    view_elements={i0jeuy, iozjef, ieqmsb, ioosnq},
     styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")),
-    component_id="i6v32l",
+    component_id="ir33ck",
     display_order=1,
-    custom_attributes={"id": "i6v32l"}
+    custom_attributes={"id": "ir33ck"}
 )
-i6v32l_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")
-i6v32l.layout = i6v32l_layout
-irwddy = Text(
-    name="irwddy",
+ir33ck_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")
+ir33ck.layout = ir33ck_layout
+ivpbmu = Text(
+    name="ivpbmu",
     content="© 2026 BESSER. All rights reserved.",
     description="Text element",
     styling=Styling(size=Size(font_size="11px", padding_top="20px", margin_top="auto"), position=Position(alignment=Alignment.CENTER), color=Color(opacity="0.8", color_palette="default", border_top="1px solid rgba(255,255,255,0.2)")),
-    component_id="irwddy",
+    component_id="ivpbmu",
     display_order=2,
-    custom_attributes={"id": "irwddy"}
+    custom_attributes={"id": "ivpbmu"}
 )
-iiy6uq = ViewContainer(
-    name="iiy6uq",
+iytnrs = ViewContainer(
+    name="iytnrs",
     description="nav container",
-    view_elements={iap6xa, i6v32l, irwddy},
+    view_elements={iiucwf, ir33ck, ivpbmu},
     styling=Styling(size=Size(width="250px", padding="20px", unit_size=UnitSize.PIXELS), position=Position(display="flex", overflow_y="auto"), color=Color(background_color="linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)", text_color="white", color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column")),
-    component_id="iiy6uq",
+    component_id="iytnrs",
     tag_name="nav",
     display_order=0,
-    custom_attributes={"id": "iiy6uq"}
+    custom_attributes={"id": "iytnrs"}
 )
-iiy6uq_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column")
-iiy6uq.layout = iiy6uq_layout
-iez091 = Text(
-    name="iez091",
+iytnrs_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column")
+iytnrs.layout = iytnrs_layout
+iv89qw = Text(
+    name="iv89qw",
     content="Project",
     description="Text element",
     styling=Styling(size=Size(font_size="32px", margin_top="0", margin_bottom="10px"), color=Color(text_color="#333", color_palette="default")),
-    component_id="iez091",
+    component_id="iv89qw",
     tag_name="h1",
     display_order=0,
-    custom_attributes={"id": "iez091"}
+    custom_attributes={"id": "iv89qw"}
 )
-itj79d = Text(
-    name="itj79d",
+id3r9u = Text(
+    name="id3r9u",
     content="Manage Project data",
     description="Text element",
     styling=Styling(size=Size(margin_bottom="30px"), color=Color(text_color="#666", color_palette="default")),
-    component_id="itj79d",
+    component_id="id3r9u",
     tag_name="p",
     display_order=1,
-    custom_attributes={"id": "itj79d"}
+    custom_attributes={"id": "id3r9u"}
 )
 table_project_4_col_0 = FieldColumn(label="Name", field=Project_name)
 table_project_4_col_1_path = bind_association_end(domain_model, "appointment")
 table_project_4_col_1 = LookupColumn(label="Appointment", path=table_project_4_col_1_path, field=Appointment_name)
+table_project_4_col_2_path = bind_association_end(domain_model, "user")
+table_project_4_col_2 = LookupColumn(label="User", path=table_project_4_col_2_path, field=User_name)
 table_project_4 = Table(
     name="table_project_4",
     title="Project List",
@@ -981,12 +610,12 @@ table_project_4 = Table(
     show_pagination=True,
     rows_per_page=5,
     action_buttons=True,
-    columns=[table_project_4_col_0, table_project_4_col_1],
+    columns=[table_project_4_col_0, table_project_4_col_1, table_project_4_col_2],
     styling=Styling(size=Size(width="100%", min_height="400px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50")),
     component_id="table-project-4",
     display_order=2,
     css_classes=["has-data-binding"],
-    custom_attributes={"chart-color": "#2c3e50", "chart-title": "Project List", "data-source": "class_xebn6s64u_mwrt3tm6_o9p", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": [{'field': 'name', 'label': 'Name', 'columnType': 'field', '_expanded': False}, {'field': 'Appointment', 'label': 'Appointment', 'columnType': 'lookup', 'lookupEntity': 'class_ypf6o2w6l_mwrsttyt_rxp', 'lookupField': 'name', '_expanded': False}], "id": "table-project-4", "filter": ""}
+    custom_attributes={"chart-color": "#2c3e50", "chart-title": "Project List", "data-source": "class_xebn6s64u_mwrt3tm6_o9p", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": [{'field': 'name', 'label': 'Name', 'columnType': 'field', '_expanded': False}, {'field': 'Appointment', 'label': 'Appointment', 'columnType': 'lookup', 'lookupEntity': 'class_ypf6o2w6l_mwrsttyt_rxp', 'lookupField': 'name', '_expanded': False}, {'field': 'User', 'label': 'User', 'columnType': 'lookup', 'lookupEntity': 'class_n86tmatqd_mwrtel4b_c52', 'lookupField': 'name', '_expanded': False}], "id": "table-project-4", "filter": ""}
 )
 table_project_4_binding = None
 try:
@@ -994,34 +623,223 @@ try:
 except NameError:
     pass
 table_project_4.data_binding = table_project_4_binding
-inzyul = ViewContainer(
-    name="inzyul",
+inzetw = ViewContainer(
+    name="inzetw",
     description="main container",
-    view_elements={iez091, itj79d, table_project_4},
+    view_elements={iv89qw, id3r9u, table_project_4},
     styling=Styling(size=Size(padding="40px"), position=Position(overflow_y="auto"), color=Color(background_color="#f5f5f5", color_palette="default"), layout=Layout(flex="1")),
-    component_id="inzyul",
+    component_id="inzetw",
     tag_name="main",
     display_order=1,
-    custom_attributes={"id": "inzyul"}
+    custom_attributes={"id": "inzetw"}
 )
-inzyul_layout = Layout(flex="1")
-inzyul.layout = inzyul_layout
-ijexzk = ViewContainer(
-    name="ijexzk",
+inzetw_layout = Layout(flex="1")
+inzetw.layout = inzetw_layout
+ikpqfd = ViewContainer(
+    name="ikpqfd",
     description=" component",
-    view_elements={iiy6uq, inzyul},
+    view_elements={iytnrs, inzetw},
     styling=Styling(size=Size(height="100vh", font_family="Arial, sans-serif"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX)),
-    component_id="ijexzk",
+    component_id="ikpqfd",
     display_order=0,
-    custom_attributes={"id": "ijexzk"}
+    custom_attributes={"id": "ikpqfd"}
 )
-ijexzk_layout = Layout(layout_type=LayoutType.FLEX)
-ijexzk.layout = ijexzk_layout
-wrapper_5.view_elements = {ijexzk}
+ikpqfd_layout = Layout(layout_type=LayoutType.FLEX)
+ikpqfd.layout = ikpqfd_layout
+wrapper_3.view_elements = {ikpqfd}
+
+
+# Screen: wrapper_4
+wrapper_4 = Screen(name="wrapper_4", description="User", view_elements=set(), route_path="/user", screen_size="Medium")
+wrapper_4.component_id = "page-user-5"
+imegjy = Text(
+    name="imegjy",
+    content="BESSER",
+    description="Text element",
+    styling=Styling(size=Size(font_size="24px", font_weight="bold", margin_top="0", margin_bottom="30px"), color=Color(color_palette="default")),
+    component_id="imegjy",
+    tag_name="h2",
+    display_order=0,
+    custom_attributes={"id": "imegjy"}
+)
+ijqjph = Link(
+    name="ijqjph",
+    description="Link element",
+    label="HelloWorld",
+    url="/helloworld",
+    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
+    component_id="ijqjph",
+    tag_name="a",
+    display_order=0,
+    custom_attributes={"href": "/helloworld", "id": "ijqjph"}
+)
+iq26vh = Link(
+    name="iq26vh",
+    description="Link element",
+    label="Appointment",
+    url="/appointment",
+    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
+    component_id="iq26vh",
+    tag_name="a",
+    display_order=1,
+    custom_attributes={"href": "/appointment", "id": "iq26vh"}
+)
+ib4o2g = Link(
+    name="ib4o2g",
+    description="Link element",
+    label="Project",
+    url="/project",
+    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="transparent", text_color="white", color_palette="default", border_radius="4px")),
+    component_id="ib4o2g",
+    tag_name="a",
+    display_order=2,
+    custom_attributes={"href": "/project", "id": "ib4o2g"}
+)
+ivhlth = Link(
+    name="ivhlth",
+    description="Link element",
+    label="User",
+    url="/user",
+    styling=Styling(size=Size(padding="10px 15px", text_decoration="none", margin_bottom="5px"), position=Position(display="block"), color=Color(background_color="rgba(255,255,255,0.2)", text_color="white", color_palette="default", border_radius="4px")),
+    component_id="ivhlth",
+    tag_name="a",
+    display_order=3,
+    custom_attributes={"href": "/user", "id": "ivhlth"}
+)
+ijtogn = ViewContainer(
+    name="ijtogn",
+    description=" component",
+    view_elements={ijqjph, iq26vh, ib4o2g, ivhlth},
+    styling=Styling(position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")),
+    component_id="ijtogn",
+    display_order=1,
+    custom_attributes={"id": "ijtogn"}
+)
+ijtogn_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column", flex="1")
+ijtogn.layout = ijtogn_layout
+ip956p = Text(
+    name="ip956p",
+    content="© 2026 BESSER. All rights reserved.",
+    description="Text element",
+    styling=Styling(size=Size(font_size="11px", padding_top="20px", margin_top="auto"), position=Position(alignment=Alignment.CENTER), color=Color(opacity="0.8", color_palette="default", border_top="1px solid rgba(255,255,255,0.2)")),
+    component_id="ip956p",
+    display_order=2,
+    custom_attributes={"id": "ip956p"}
+)
+itvnpf = ViewContainer(
+    name="itvnpf",
+    description="nav container",
+    view_elements={imegjy, ijtogn, ip956p},
+    styling=Styling(size=Size(width="250px", padding="20px", unit_size=UnitSize.PIXELS), position=Position(display="flex", overflow_y="auto"), color=Color(background_color="linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)", text_color="white", color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_direction="column")),
+    component_id="itvnpf",
+    tag_name="nav",
+    display_order=0,
+    custom_attributes={"id": "itvnpf"}
+)
+itvnpf_layout = Layout(layout_type=LayoutType.FLEX, flex_direction="column")
+itvnpf.layout = itvnpf_layout
+ir8ocj = Text(
+    name="ir8ocj",
+    content="User",
+    description="Text element",
+    styling=Styling(size=Size(font_size="32px", margin_top="0", margin_bottom="10px"), color=Color(text_color="#333", color_palette="default")),
+    component_id="ir8ocj",
+    tag_name="h1",
+    display_order=0,
+    custom_attributes={"id": "ir8ocj"}
+)
+ivuy2f = Text(
+    name="ivuy2f",
+    content="Manage User data",
+    description="Text element",
+    styling=Styling(size=Size(margin_bottom="30px"), color=Color(text_color="#666", color_palette="default")),
+    component_id="ivuy2f",
+    tag_name="p",
+    display_order=1,
+    custom_attributes={"id": "ivuy2f"}
+)
+table_user_5_col_0 = FieldColumn(label="Name", field=User_name)
+table_user_5_col_1 = FieldColumn(label="Role", field=User_role)
+table_user_5_col_2_path = bind_association_end(domain_model, "project")
+table_user_5_col_2 = LookupColumn(label="Project", path=table_user_5_col_2_path, field=Project_name)
+table_user_5 = Table(
+    name="table_user_5",
+    title="User List",
+    primary_color="#2c3e50",
+    show_header=True,
+    striped_rows=False,
+    show_pagination=True,
+    rows_per_page=5,
+    action_buttons=True,
+    columns=[table_user_5_col_0, table_user_5_col_1, table_user_5_col_2],
+    styling=Styling(size=Size(width="100%", min_height="400px", unit_size=UnitSize.PERCENTAGE), color=Color(color_palette="default", primary_color="#2c3e50")),
+    component_id="table-user-5",
+    display_order=2,
+    css_classes=["has-data-binding"],
+    custom_attributes={"chart-color": "#2c3e50", "chart-title": "User List", "data-source": "class_n86tmatqd_mwrtel4b_c52", "show-header": "true", "striped-rows": "false", "show-pagination": "true", "rows-per-page": "5", "action-buttons": "true", "columns": [{'field': 'name', 'label': 'Name', 'columnType': 'field', '_expanded': False}, {'field': 'role', 'label': 'Role', 'columnType': 'field', '_expanded': False}, {'field': 'Project', 'label': 'Project', 'columnType': 'lookup', 'lookupEntity': 'class_xebn6s64u_mwrt3tm6_o9p', 'lookupField': 'name', '_expanded': False}], "id": "table-user-5", "filter": ""}
+)
+table_user_5_binding = None
+try:
+    table_user_5_binding = build_data_binding(domain_model, "User", name="UserDataBinding")
+except NameError:
+    pass
+table_user_5.data_binding = table_user_5_binding
+i2w16z = Button(
+    name="i2w16z",
+    description="Button component",
+    label="+ editProject",
+    buttonType=ButtonType.CustomizableButton,
+    actionType=ButtonActionType.RunMethod,
+    method_btn=User_m_editProject,
+    instance_source="table-user-5",
+    is_instance_method=True,
+    confirmation_message="Are you sure?",
+    styling=Styling(size=Size(padding="6px 14px", font_size="13px", font_weight="600", text_decoration="none", letter_spacing="0.01em"), position=Position(display="inline-flex", cursor="pointer", transition="background 0.2s"), color=Color(background_color="linear-gradient(90deg, #2563eb 0%, #1e40af 100%)", text_color="#fff", color_palette="default", border_radius="4px", border="none", box_shadow="0 1px 4px rgba(37,99,235,0.10)"), layout=Layout(layout_type=LayoutType.FLEX, align_items="center")),
+    component_id="i2w16z",
+    tag_name="button",
+    display_order=0,
+    css_classes=["action-button-component"],
+    custom_attributes={"type": "button", "data-button-label": "+ editProject", "data-action-type": "run-method", "data-method-class": "class_n86tmatqd_mwrtel4b_c52", "data-method": "method_8j70capyv_mwrtel4b_oet", "data-instance-source": "table-user-5", "id": "i2w16z", "data-confirmation": "false", "data-confirmation-message": "Are you sure?", "button-label": "+ editProject", "data-method-name": "method_8j70capyv_mwrtel4b_oet"}
+)
+i873fg = ViewContainer(
+    name="i873fg",
+    description=" component",
+    view_elements={i2w16z},
+    styling=Styling(size=Size(margin_top="20px"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="10px")),
+    component_id="i873fg",
+    display_order=3,
+    custom_attributes={"id": "i873fg"}
+)
+i873fg_layout = Layout(layout_type=LayoutType.FLEX, flex_wrap="wrap", gap="10px")
+i873fg.layout = i873fg_layout
+ih32zl = ViewContainer(
+    name="ih32zl",
+    description="main container",
+    view_elements={ir8ocj, ivuy2f, table_user_5, i873fg},
+    styling=Styling(size=Size(padding="40px"), position=Position(overflow_y="auto"), color=Color(background_color="#f5f5f5", color_palette="default"), layout=Layout(flex="1")),
+    component_id="ih32zl",
+    tag_name="main",
+    display_order=1,
+    custom_attributes={"id": "ih32zl"}
+)
+ih32zl_layout = Layout(flex="1")
+ih32zl.layout = ih32zl_layout
+id0ihy = ViewContainer(
+    name="id0ihy",
+    description=" component",
+    view_elements={itvnpf, ih32zl},
+    styling=Styling(size=Size(height="100vh", font_family="Arial, sans-serif"), position=Position(display="flex"), color=Color(color_palette="default"), layout=Layout(layout_type=LayoutType.FLEX)),
+    component_id="id0ihy",
+    display_order=0,
+    custom_attributes={"id": "id0ihy"}
+)
+id0ihy_layout = Layout(layout_type=LayoutType.FLEX)
+id0ihy.layout = id0ihy_layout
+wrapper_4.view_elements = {id0ihy}
 
 gui_module = Module(
     name="GUI_Module",
-    screens={wrapper, wrapper_2, wrapper_3, wrapper_4, wrapper_5}
+    screens={wrapper, wrapper_2, wrapper_3, wrapper_4}
 )
 
 # GUI Model
