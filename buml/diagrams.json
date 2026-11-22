@@ -7,7 +7,7 @@
     "description": "Student Project Managment",
     "owner": "dudhe_malvika_fabian",
     "createdAt": "2026-11-03T15:57:20.136Z",
-    "currentDiagramType": "ClassDiagram",
+    "currentDiagramType": "GUINoCodeDiagram",
     "currentDiagramIndices": {
       "ClassDiagram": 0,
       "ObjectDiagram": 0,
@@ -776,7 +776,7 @@
             },
             "assessments": {}
           },
-          "lastUpdate": "2026-11-22T13:19:04.461Z"
+          "lastUpdate": "2026-11-22T13:25:49.229Z"
         }
       ],
       "GUINoCodeDiagram": [
@@ -1099,7 +1099,8 @@
                   }
                 ],
                 "id": "page-helloworld-0",
-                "route_path": "/helloworld"
+                "route_path": "/helloworld",
+                "besserBaseSnapshot": "{\"components\":[{\"attributes\":{\"id\":\"inyxn\"},\"components\":[{\"tagName\":\"nav\",\"attributes\":{\"id\":\"i8tkl\"},\"components\":[{\"tagName\":\"h2\",\"type\":\"text\",\"attributes\":{\"id\":\"itpmx\"},\"components\":[{\"type\":\"textnode\",\"content\":\"BESSER\"}]},{\"attributes\":{\"id\":\"iusmj\"},\"components\":[{\"type\":\"link\",\"attributes\":{\"href\":\"/helloworld\",\"id\":\"ijasp\"},\"components\":[{\"type\":\"textnode\",\"content\":\"HelloWorld\"}]},{\"type\":\"link\",\"attributes\":{\"href\":\"/appointment\",\"id\":\"istti\"},\"components\":[{\"type\":\"textnode\",\"content\":\"Appointment\"}]},{\"type\":\"link\",\"attributes\":{\"href\":\"/project\",\"id\":\"itf8l\"},\"components\":[{\"type\":\"textnode\",\"content\":\"Project\"}]},{\"type\":\"link\",\"attributes\":{\"href\":\"/user\",\"id\":\"ilk0v\"},\"components\":[{\"type\":\"textnode\",\"content\":\"User\"}]}]},{\"type\":\"text\",\"attributes\":{\"id\":\"i6uz2\"},\"components\":[{\"type\":\"textnode\",\"content\":\"\u00a9 2026 BESSER. All rights reserved.\"}]}]},{\"tagName\":\"main\",\"attributes\":{\"id\":\"i7a7i\"},\"components\":[{\"tagName\":\"h1\",\"type\":\"text\",\"attributes\":{\"id\":\"ihltv\"},\"components\":[{\"type\":\"textnode\",\"content\":\"HelloWorld\"}]},{\"tagName\":\"p\",\"type\":\"text\",\"attributes\":{\"id\":\"idreg\"},\"components\":[{\"type\":\"textnode\",\"content\":\"Manage HelloWorld data\"}]},{\"type\":\"table\",\"style\":\"\",\"attributes\":{\"chart-color\":\"#2c3e50\",\"chart-title\":\"HelloWorld List\",\"data-source\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"show-header\":\"true\",\"striped-rows\":\"false\",\"show-pagination\":\"true\",\"rows-per-page\":\"5\",\"action-buttons\":\"true\",\"columns\":[{\"field\":\"id\",\"label\":\"Id\",\"columnType\":\"field\",\"_expanded\":false},{\"field\":\"Name\",\"label\":\"Name\",\"columnType\":\"field\",\"_expanded\":false}],\"id\":\"table-helloworld-0\",\"filter\":\"\"},\"chart-title\":\"HelloWorld List\",\"data-source\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"show-header\":\"true\",\"striped-rows\":\"false\",\"show-pagination\":\"true\",\"action-buttons\":\"true\",\"rows-per-page\":\"5\",\"filter\":\"\",\"columns\":[{\"field\":\"id\",\"label\":\"Id\",\"columnType\":\"field\",\"_expanded\":false},{\"field\":\"Name\",\"label\":\"Name\",\"columnType\":\"field\",\"_expanded\":false}],\"components\":[{\"type\":\"tbody\",\"draggable\":[\"table\"],\"droppable\":[\"tr\"],\"components\":[{\"type\":\"row\",\"draggable\":[\"thead\",\"tbody\",\"tfoot\"],\"droppable\":[\"th\",\"td\"],\"classes\":[\"row\"],\"components\":[{\"type\":\"cell\",\"draggable\":[\"tr\"],\"classes\":[\"cell\"]}]}]}],\"chart-color\":\"#2c3e50\"},{\"attributes\":{\"id\":\"iw2ba\"},\"components\":[{\"type\":\"action-button\",\"style\":\"\",\"classes\":[\"action-button-component\"],\"attributes\":{\"type\":\"button\",\"data-button-label\":\"showHelloWorld\",\"data-action-type\":\"run-method\",\"data-method-class\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"data-method\":\"method_zg5zggc0r_mw0vgnrg_d4h\",\"data-instance-source\":\"table-helloworld-0\",\"id\":\"idt0f\"},\"button-label\":\"showHelloWorld\",\"action-type\":\"run-method\",\"method-class\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"method\":\"method_zg5zggc0r_mw0vgnrg_d4h\",\"instance-source\":\"table-helloworld-0\",\"components\":[{\"type\":\"textnode\",\"content\":\"showHelloWorld\"}]},{\"type\":\"action-button\",\"style\":\"\",\"classes\":[\"action-button-component\"],\"attributes\":{\"type\":\"button\",\"data-button-label\":\"+ showCurrentTime\",\"data-action-type\":\"run-method\",\"data-method-class\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"data-method\":\"method_q42piav36_mw4zqmk6_srk\",\"data-instance-source\":\"table-helloworld-0\",\"id\":\"ijhpz\"},\"button-label\":\"+ showCurrentTime\",\"action-type\":\"run-method\",\"method-class\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"method\":\"method_q42piav36_mw4zqmk6_srk\",\"instance-source\":\"table-helloworld-0\",\"components\":[{\"type\":\"textnode\",\"content\":\"+ showCurrentTime\"}]}]}]}]}],\"css\":[{\"selectors\":[\"#inyxn\"],\"style\":{\"display\":\"flex\",\"height\":\"100vh\",\"font-family\":\"Arial, sans-serif\"}},{\"selectors\":[\"#i8tkl\"],\"style\":{\"width\":\"250px\",\"background\":\"linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)\",\"color\":\"white\",\"padding\":\"20px\",\"overflow-y\":\"auto\",\"display\":\"flex\",\"flex-direction\":\"column\"}},{\"selectors\":[\"#itpmx\"],\"style\":{\"margin-top\":\"0\",\"font-size\":\"24px\",\"margin-bottom\":\"30px\",\"font-weight\":\"bold\"}},{\"selectors\":[\"#iusmj\"],\"style\":{\"display\":\"flex\",\"flex-direction\":\"column\",\"flex\":\"1\"}},{\"selectors\":[\"#ijasp\"],\"style\":{\"color\":\"white\",\"text-decoration\":\"none\",\"padding\":\"10px 15px\",\"display\":\"block\",\"background\":\"rgba(255,255,255,0.2)\",\"border-radius\":\"4px\",\"margin-bottom\":\"5px\"}},{\"selectors\":[\"#istti\"],\"style\":{\"color\":\"white\",\"text-decoration\":\"none\",\"padding\":\"10px 15px\",\"display\":\"block\",\"background\":\"transparent\",\"border-radius\":\"4px\",\"margin-bottom\":\"5px\"}},{\"selectors\":[\"#itf8l\"],\"style\":{\"color\":\"white\",\"text-decoration\":\"none\",\"padding\":\"10px 15px\",\"display\":\"block\",\"background\":\"transparent\",\"border-radius\":\"4px\",\"margin-bottom\":\"5px\"}},{\"selectors\":[\"#ilk0v\"],\"style\":{\"color\":\"white\",\"text-decoration\":\"none\",\"padding\":\"10px 15px\",\"display\":\"block\",\"background\":\"transparent\",\"border-radius\":\"4px\",\"margin-bottom\":\"5px\"}},{\"selectors\":[\"#i6uz2\"],\"style\":{\"margin-top\":\"auto\",\"padding-top\":\"20px\",\"border-top\":\"1px solid rgba(255,255,255,0.2)\",\"font-size\":\"11px\",\"opacity\":\"0.8\",\"text-align\":\"center\"}},{\"selectors\":[\"#i7a7i\"],\"style\":{\"flex\":\"1\",\"padding\":\"40px\",\"overflow-y\":\"auto\",\"background\":\"#f5f5f5\"}},{\"selectors\":[\"#ihltv\"],\"style\":{\"margin-top\":\"0\",\"color\":\"#333\",\"font-size\":\"32px\",\"margin-bottom\":\"10px\"}},{\"selectors\":[\"#idreg\"],\"style\":{\"color\":\"#666\",\"margin-bottom\":\"30px\"}},{\"selectors\":[\"#iw2ba\"],\"style\":{\"margin-top\":\"20px\",\"display\":\"flex\",\"gap\":\"10px\",\"flex-wrap\":\"wrap\"}},{\"selectors\":[\"#idt0f\"],\"style\":{\"display\":\"inline-flex\",\"align-items\":\"center\",\"padding\":\"6px 14px\",\"background\":\"linear-gradient(90deg, #2563eb 0%, #1e40af 100%)\",\"color\":\"#fff\",\"text-decoration\":\"none\",\"border-radius\":\"4px\",\"font-size\":\"13px\",\"font-weight\":\"600\",\"letter-spacing\":\"0.01em\",\"cursor\":\"pointer\",\"border\":\"none\",\"box-shadow\":\"0 1px 4px rgba(37,99,235,0.10)\",\"transition\":\"background 0.2s\"}},{\"selectors\":[\"#ijhpz\"],\"style\":{\"display\":\"inline-flex\",\"align-items\":\"center\",\"padding\":\"6px 14px\",\"background\":\"linear-gradient(90deg, #2563eb 0%, #1e40af 100%)\",\"color\":\"#fff\",\"text-decoration\":\"none\",\"border-radius\":\"4px\",\"font-size\":\"13px\",\"font-weight\":\"600\",\"letter-spacing\":\"0.01em\",\"cursor\":\"pointer\",\"border\":\"none\",\"box-shadow\":\"0 1px 4px rgba(37,99,235,0.10)\",\"transition\":\"background 0.2s\"}}]}"
               },
               {
                 "name": "Appointment",
@@ -3519,7 +3520,7 @@
             "symbols": [],
             "version": "0.21.13"
           },
-          "lastUpdate": "2026-11-22T13:18:15.962Z"
+          "lastUpdate": "2026-11-22T13:26:08.804Z"
         }
       ],
       "AgentDiagram": [
@@ -3714,7 +3715,7 @@
       "updatedAt": "2026-11-22T12:30:22.594Z"
     }
   },
-  "exportedAt": "2026-11-22T13:19:04.463Z",
+  "exportedAt": "2026-11-22T13:40:00.215Z",
   "version": "2.0.0",
   "editorVersion": "8.9.4"
 }
