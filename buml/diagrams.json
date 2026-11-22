@@ -7,7 +7,7 @@
     "description": "Student Project Managment",
     "owner": "dudhe_malvika_fabian",
     "createdAt": "2026-11-03T15:57:20.136Z",
-    "currentDiagramType": "GUINoCodeDiagram",
+    "currentDiagramType": "ClassDiagram",
     "currentDiagramIndices": {
       "ClassDiagram": 0,
       "ObjectDiagram": 0,
@@ -31,8 +31,8 @@
             "version": "3.0.0",
             "type": "ClassDiagram",
             "size": {
-              "width": 680,
-              "height": 420
+              "width": 1080,
+              "height": 760
             },
             "interactive": {
               "elements": {},
@@ -252,12 +252,244 @@
                 "isDerived": false,
                 "isId": false,
                 "isExternalId": false
+              },
+              "class_ypf6o2w6l_mwrsttyt_rxp": {
+                "id": "class_ypf6o2w6l_mwrsttyt_rxp",
+                "name": "Appointment",
+                "type": "Class",
+                "owner": null,
+                "bounds": {
+                  "x": -20,
+                  "y": -360,
+                  "width": 220,
+                  "height": 165
+                },
+                "attributes": [
+                  "attr_js697j64q_mwrsttyt_mcg",
+                  "attr_14j1w51bg_mwrsttyt_6c0",
+                  "attr_e7pyj6777_mwrsttyt_3yn",
+                  "attr_dt1aw7m65_mwrsttyt_kzk",
+                  "attr_w5bpht84e_mwrsttyt_zpi"
+                ],
+                "methods": []
+              },
+              "attr_js697j64q_mwrsttyt_mcg": {
+                "id": "attr_js697j64q_mwrsttyt_mcg",
+                "name": "name",
+                "type": "ClassAttribute",
+                "owner": "class_ypf6o2w6l_mwrsttyt_rxp",
+                "bounds": {
+                  "x": -19.5,
+                  "y": -319.5,
+                  "width": 219,
+                  "height": 25
+                },
+                "code": "",
+                "visibility": "private",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "neuralNetworkId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "attr_14j1w51bg_mwrsttyt_6c0": {
+                "id": "attr_14j1w51bg_mwrsttyt_6c0",
+                "name": "description",
+                "type": "ClassAttribute",
+                "owner": "class_ypf6o2w6l_mwrsttyt_rxp",
+                "bounds": {
+                  "x": -19.5,
+                  "y": -294.5,
+                  "width": 219,
+                  "height": 25
+                },
+                "code": "",
+                "visibility": "private",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "neuralNetworkId": "",
+                "isOptional": true,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "attr_e7pyj6777_mwrsttyt_3yn": {
+                "id": "attr_e7pyj6777_mwrsttyt_3yn",
+                "name": "type",
+                "type": "ClassAttribute",
+                "owner": "class_ypf6o2w6l_mwrsttyt_rxp",
+                "bounds": {
+                  "x": -19.5,
+                  "y": -269.5,
+                  "width": 219,
+                  "height": 25
+                },
+                "code": "",
+                "visibility": "private",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "neuralNetworkId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "attr_dt1aw7m65_mwrsttyt_kzk": {
+                "id": "attr_dt1aw7m65_mwrsttyt_kzk",
+                "name": "startTime",
+                "type": "ClassAttribute",
+                "owner": "class_ypf6o2w6l_mwrsttyt_rxp",
+                "bounds": {
+                  "x": -19.5,
+                  "y": -244.5,
+                  "width": 219,
+                  "height": 25
+                },
+                "code": "",
+                "visibility": "private",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "neuralNetworkId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "attr_w5bpht84e_mwrsttyt_zpi": {
+                "id": "attr_w5bpht84e_mwrsttyt_zpi",
+                "name": "endTime",
+                "type": "ClassAttribute",
+                "owner": "class_ypf6o2w6l_mwrsttyt_rxp",
+                "bounds": {
+                  "x": -19.5,
+                  "y": -219.5,
+                  "width": 219,
+                  "height": 25
+                },
+                "code": "",
+                "visibility": "private",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "neuralNetworkId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
+              },
+              "class_xebn6s64u_mwrt3tm6_o9p": {
+                "id": "class_xebn6s64u_mwrt3tm6_o9p",
+                "name": "Project",
+                "type": "Class",
+                "owner": null,
+                "bounds": {
+                  "x": 300,
+                  "y": 0,
+                  "width": 220,
+                  "height": 65
+                },
+                "attributes": [
+                  "attr_3hhxh62ac_mwrt3tm6_vnv"
+                ],
+                "methods": []
+              },
+              "attr_3hhxh62ac_mwrt3tm6_vnv": {
+                "id": "attr_3hhxh62ac_mwrt3tm6_vnv",
+                "name": "name",
+                "type": "ClassAttribute",
+                "owner": "class_xebn6s64u_mwrt3tm6_o9p",
+                "bounds": {
+                  "x": 300.5,
+                  "y": 40.5,
+                  "width": 219,
+                  "height": 25
+                },
+                "code": "",
+                "visibility": "private",
+                "attributeType": "str",
+                "implementationType": "none",
+                "stateMachineId": "",
+                "quantumCircuitId": "",
+                "neuralNetworkId": "",
+                "isOptional": false,
+                "isDerived": false,
+                "isId": false,
+                "isExternalId": false
               }
             },
-            "relationships": {},
+            "relationships": {
+              "rel_da1loiw4a_mwrt3tm7_avu": {
+                "id": "rel_da1loiw4a_mwrt3tm7_avu",
+                "name": "",
+                "type": "ClassBidirectional",
+                "owner": null,
+                "bounds": {
+                  "x": 200,
+                  "y": -287.5,
+                  "width": 100,
+                  "height": 358
+                },
+                "path": [
+                  {
+                    "x": 100,
+                    "y": 320
+                  },
+                  {
+                    "x": 50,
+                    "y": 320
+                  },
+                  {
+                    "x": 50,
+                    "y": 10
+                  },
+                  {
+                    "x": 0,
+                    "y": 10
+                  }
+                ],
+                "source": {
+                  "direction": "Left",
+                  "element": "class_xebn6s64u_mwrt3tm6_o9p",
+                  "multiplicity": "1",
+                  "role": "",
+                  "navigable": true,
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "target": {
+                  "direction": "Right",
+                  "element": "class_ypf6o2w6l_mwrsttyt_rxp",
+                  "multiplicity": "0..*",
+                  "role": "",
+                  "navigable": true,
+                  "bounds": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                "isManuallyLayouted": false
+              }
+            },
             "assessments": {}
           },
-          "lastUpdate": "2026-11-12T18:43:32.167Z"
+          "lastUpdate": "2026-11-22T12:25:19.122Z"
         }
       ],
       "GUINoCodeDiagram": [
@@ -284,20 +516,20 @@
                       "components": [
                         {
                           "attributes": {
-                            "id": "i8xfp"
+                            "id": "i8106"
                           },
                           "components": [
                             {
                               "tagName": "nav",
                               "attributes": {
-                                "id": "iqfs9"
+                                "id": "icmdy"
                               },
                               "components": [
                                 {
                                   "tagName": "h2",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "ifb1q"
+                                    "id": "i3kkp"
                                   },
                                   "components": [
                                     {
@@ -308,14 +540,14 @@
                                 },
                                 {
                                   "attributes": {
-                                    "id": "ix9wn"
+                                    "id": "i0z1q"
                                   },
                                   "components": [
                                     {
                                       "type": "link",
                                       "attributes": {
                                         "href": "/helloworld",
-                                        "id": "i496y"
+                                        "id": "itfpd"
                                       },
                                       "components": [
                                         {
@@ -328,7 +560,7 @@
                                       "type": "link",
                                       "attributes": {
                                         "href": "/timeservice",
-                                        "id": "iwweq"
+                                        "id": "il4dq"
                                       },
                                       "components": [
                                         {
@@ -341,12 +573,38 @@
                                       "type": "link",
                                       "attributes": {
                                         "href": "/veryimportantclass",
-                                        "id": "iga1x"
+                                        "id": "ipws8"
                                       },
                                       "components": [
                                         {
                                           "type": "textnode",
                                           "content": "veryImportantClass"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/appointment",
+                                        "id": "ickf7"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Appointment"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/project",
+                                        "id": "ix68j"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Project"
                                         }
                                       ]
                                     }
@@ -355,7 +613,7 @@
                                 {
                                   "type": "text",
                                   "attributes": {
-                                    "id": "i1md4"
+                                    "id": "iljjz"
                                   },
                                   "components": [
                                     {
@@ -369,14 +627,14 @@
                             {
                               "tagName": "main",
                               "attributes": {
-                                "id": "id0ih"
+                                "id": "il4b3"
                               },
                               "components": [
                                 {
                                   "tagName": "h1",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "i4bdk"
+                                    "id": "iye2h"
                                   },
                                   "components": [
                                     {
@@ -389,7 +647,7 @@
                                   "tagName": "p",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "i5tif"
+                                    "id": "izhpj"
                                   },
                                   "components": [
                                     {
@@ -492,7 +750,7 @@
                                 },
                                 {
                                   "attributes": {
-                                    "id": "itm7g"
+                                    "id": "ivzvh"
                                   },
                                   "components": [
                                     {
@@ -508,7 +766,7 @@
                                         "data-method-class": "class_kjy9sn6ld_mw0vgnrg_m1e",
                                         "data-method": "method_zg5zggc0r_mw0vgnrg_d4h",
                                         "data-instance-source": "table-helloworld-0",
-                                        "id": "ip4bf"
+                                        "id": "igjvg"
                                       },
                                       "button-label": "showHelloWorld",
                                       "action-type": "run-method",
@@ -535,7 +793,7 @@
                                         "data-method-class": "class_kjy9sn6ld_mw0vgnrg_m1e",
                                         "data-method": "method_q42piav36_mw4zqmk6_srk",
                                         "data-instance-source": "table-helloworld-0",
-                                        "id": "ira6a"
+                                        "id": "i8y3r"
                                       },
                                       "button-label": "+ showCurrentTime",
                                       "action-type": "run-method",
@@ -563,12 +821,11 @@
                         "tagName": "html"
                       }
                     },
-                    "id": "NdKtyWLlmE9Cpp60"
+                    "id": "oL0wbdeeVk9JXfeV"
                   }
                 ],
                 "id": "page-helloworld-0",
-                "route_path": "/helloworld",
-                "besserBaseSnapshot": "{\"components\":[{\"attributes\":{\"id\":\"i8xfp\"},\"components\":[{\"tagName\":\"nav\",\"attributes\":{\"id\":\"iqfs9\"},\"components\":[{\"tagName\":\"h2\",\"type\":\"text\",\"attributes\":{\"id\":\"ifb1q\"},\"components\":[{\"type\":\"textnode\",\"content\":\"BESSER\"}]},{\"attributes\":{\"id\":\"ix9wn\"},\"components\":[{\"type\":\"link\",\"attributes\":{\"href\":\"/helloworld\",\"id\":\"i496y\"},\"components\":[{\"type\":\"textnode\",\"content\":\"HelloWorld\"}]},{\"type\":\"link\",\"attributes\":{\"href\":\"/timeservice\",\"id\":\"iwweq\"},\"components\":[{\"type\":\"textnode\",\"content\":\"TimeService\"}]},{\"type\":\"link\",\"attributes\":{\"href\":\"/veryimportantclass\",\"id\":\"iga1x\"},\"components\":[{\"type\":\"textnode\",\"content\":\"veryImportantClass\"}]}]},{\"type\":\"text\",\"attributes\":{\"id\":\"i1md4\"},\"components\":[{\"type\":\"textnode\",\"content\":\"\u00a9 2026 BESSER. All rights reserved.\"}]}]},{\"tagName\":\"main\",\"attributes\":{\"id\":\"id0ih\"},\"components\":[{\"tagName\":\"h1\",\"type\":\"text\",\"attributes\":{\"id\":\"i4bdk\"},\"components\":[{\"type\":\"textnode\",\"content\":\"HelloWorld\"}]},{\"tagName\":\"p\",\"type\":\"text\",\"attributes\":{\"id\":\"i5tif\"},\"components\":[{\"type\":\"textnode\",\"content\":\"Manage HelloWorld data\"}]},{\"type\":\"table\",\"style\":\"\",\"attributes\":{\"chart-color\":\"#2c3e50\",\"chart-title\":\"HelloWorld List\",\"data-source\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"show-header\":\"true\",\"striped-rows\":\"false\",\"show-pagination\":\"true\",\"rows-per-page\":\"5\",\"action-buttons\":\"true\",\"columns\":[{\"field\":\"id\",\"label\":\"Id\",\"columnType\":\"field\",\"_expanded\":false},{\"field\":\"Name\",\"label\":\"Name\",\"columnType\":\"field\",\"_expanded\":false}],\"id\":\"table-helloworld-0\",\"filter\":\"\"},\"chart-title\":\"HelloWorld List\",\"data-source\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"show-header\":\"true\",\"striped-rows\":\"false\",\"show-pagination\":\"true\",\"action-buttons\":\"true\",\"rows-per-page\":\"5\",\"filter\":\"\",\"columns\":[{\"field\":\"id\",\"label\":\"Id\",\"columnType\":\"field\",\"_expanded\":false},{\"field\":\"Name\",\"label\":\"Name\",\"columnType\":\"field\",\"_expanded\":false}],\"components\":[{\"type\":\"tbody\",\"draggable\":[\"table\"],\"droppable\":[\"tr\"],\"components\":[{\"type\":\"row\",\"draggable\":[\"thead\",\"tbody\",\"tfoot\"],\"droppable\":[\"th\",\"td\"],\"classes\":[\"row\"],\"components\":[{\"type\":\"cell\",\"draggable\":[\"tr\"],\"classes\":[\"cell\"]}]}]}],\"chart-color\":\"#2c3e50\"},{\"attributes\":{\"id\":\"itm7g\"},\"components\":[{\"type\":\"action-button\",\"style\":\"\",\"classes\":[\"action-button-component\"],\"attributes\":{\"type\":\"button\",\"data-button-label\":\"showHelloWorld\",\"data-action-type\":\"run-method\",\"data-method-class\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"data-method\":\"method_zg5zggc0r_mw0vgnrg_d4h\",\"data-instance-source\":\"table-helloworld-0\",\"id\":\"ip4bf\"},\"button-label\":\"showHelloWorld\",\"action-type\":\"run-method\",\"method-class\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"method\":\"method_zg5zggc0r_mw0vgnrg_d4h\",\"instance-source\":\"table-helloworld-0\",\"components\":[{\"type\":\"textnode\",\"content\":\"showHelloWorld\"}]},{\"type\":\"action-button\",\"style\":\"\",\"classes\":[\"action-button-component\"],\"attributes\":{\"type\":\"button\",\"data-button-label\":\"+ showCurrentTime\",\"data-action-type\":\"run-method\",\"data-method-class\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"data-method\":\"method_q42piav36_mw4zqmk6_srk\",\"data-instance-source\":\"table-helloworld-0\",\"id\":\"ira6a\"},\"button-label\":\"+ showCurrentTime\",\"action-type\":\"run-method\",\"method-class\":\"class_kjy9sn6ld_mw0vgnrg_m1e\",\"method\":\"method_q42piav36_mw4zqmk6_srk\",\"instance-source\":\"table-helloworld-0\",\"components\":[{\"type\":\"textnode\",\"content\":\"+ showCurrentTime\"}]}]}]}]}],\"css\":[{\"selectors\":[\"#i8xfp\"],\"style\":{\"display\":\"flex\",\"height\":\"100vh\",\"font-family\":\"Arial, sans-serif\"}},{\"selectors\":[\"#iqfs9\"],\"style\":{\"width\":\"250px\",\"background\":\"linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)\",\"color\":\"white\",\"padding\":\"20px\",\"overflow-y\":\"auto\",\"display\":\"flex\",\"flex-direction\":\"column\"}},{\"selectors\":[\"#ifb1q\"],\"style\":{\"margin-top\":\"0\",\"font-size\":\"24px\",\"margin-bottom\":\"30px\",\"font-weight\":\"bold\"}},{\"selectors\":[\"#ix9wn\"],\"style\":{\"display\":\"flex\",\"flex-direction\":\"column\",\"flex\":\"1\"}},{\"selectors\":[\"#i496y\"],\"style\":{\"color\":\"white\",\"text-decoration\":\"none\",\"padding\":\"10px 15px\",\"display\":\"block\",\"background\":\"rgba(255,255,255,0.2)\",\"border-radius\":\"4px\",\"margin-bottom\":\"5px\"}},{\"selectors\":[\"#iwweq\"],\"style\":{\"color\":\"white\",\"text-decoration\":\"none\",\"padding\":\"10px 15px\",\"display\":\"block\",\"background\":\"transparent\",\"border-radius\":\"4px\",\"margin-bottom\":\"5px\"}},{\"selectors\":[\"#iga1x\"],\"style\":{\"color\":\"white\",\"text-decoration\":\"none\",\"padding\":\"10px 15px\",\"display\":\"block\",\"background\":\"transparent\",\"border-radius\":\"4px\",\"margin-bottom\":\"5px\"}},{\"selectors\":[\"#i1md4\"],\"style\":{\"margin-top\":\"auto\",\"padding-top\":\"20px\",\"border-top\":\"1px solid rgba(255,255,255,0.2)\",\"font-size\":\"11px\",\"opacity\":\"0.8\",\"text-align\":\"center\"}},{\"selectors\":[\"#id0ih\"],\"style\":{\"flex\":\"1\",\"padding\":\"40px\",\"overflow-y\":\"auto\",\"background\":\"#f5f5f5\"}},{\"selectors\":[\"#i4bdk\"],\"style\":{\"margin-top\":\"0\",\"color\":\"#333\",\"font-size\":\"32px\",\"margin-bottom\":\"10px\"}},{\"selectors\":[\"#i5tif\"],\"style\":{\"color\":\"#666\",\"margin-bottom\":\"30px\"}},{\"selectors\":[\"#itm7g\"],\"style\":{\"margin-top\":\"20px\",\"display\":\"flex\",\"gap\":\"10px\",\"flex-wrap\":\"wrap\"}},{\"selectors\":[\"#ip4bf\"],\"style\":{\"display\":\"inline-flex\",\"align-items\":\"center\",\"padding\":\"6px 14px\",\"background\":\"linear-gradient(90deg, #2563eb 0%, #1e40af 100%)\",\"color\":\"#fff\",\"text-decoration\":\"none\",\"border-radius\":\"4px\",\"font-size\":\"13px\",\"font-weight\":\"600\",\"letter-spacing\":\"0.01em\",\"cursor\":\"pointer\",\"border\":\"none\",\"box-shadow\":\"0 1px 4px rgba(37,99,235,0.10)\",\"transition\":\"background 0.2s\"}},{\"selectors\":[\"#ira6a\"],\"style\":{\"display\":\"inline-flex\",\"align-items\":\"center\",\"padding\":\"6px 14px\",\"background\":\"linear-gradient(90deg, #2563eb 0%, #1e40af 100%)\",\"color\":\"#fff\",\"text-decoration\":\"none\",\"border-radius\":\"4px\",\"font-size\":\"13px\",\"font-weight\":\"600\",\"letter-spacing\":\"0.01em\",\"cursor\":\"pointer\",\"border\":\"none\",\"box-shadow\":\"0 1px 4px rgba(37,99,235,0.10)\",\"transition\":\"background 0.2s\"}}]}"
+                "route_path": "/helloworld"
               },
               {
                 "name": "TimeService",
@@ -588,20 +845,20 @@
                       "components": [
                         {
                           "attributes": {
-                            "id": "i3vrc"
+                            "id": "iat5f"
                           },
                           "components": [
                             {
                               "tagName": "nav",
                               "attributes": {
-                                "id": "iatl9"
+                                "id": "i8l3a"
                               },
                               "components": [
                                 {
                                   "tagName": "h2",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "ilebr"
+                                    "id": "ih6ob"
                                   },
                                   "components": [
                                     {
@@ -612,14 +869,14 @@
                                 },
                                 {
                                   "attributes": {
-                                    "id": "i9rup"
+                                    "id": "ic57j"
                                   },
                                   "components": [
                                     {
                                       "type": "link",
                                       "attributes": {
                                         "href": "/helloworld",
-                                        "id": "itbt8"
+                                        "id": "iqaqf"
                                       },
                                       "components": [
                                         {
@@ -632,7 +889,7 @@
                                       "type": "link",
                                       "attributes": {
                                         "href": "/timeservice",
-                                        "id": "iq62s"
+                                        "id": "ihzvy"
                                       },
                                       "components": [
                                         {
@@ -645,12 +902,38 @@
                                       "type": "link",
                                       "attributes": {
                                         "href": "/veryimportantclass",
-                                        "id": "i9q7z"
+                                        "id": "i44ec"
                                       },
                                       "components": [
                                         {
                                           "type": "textnode",
                                           "content": "veryImportantClass"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/appointment",
+                                        "id": "i2tjp"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Appointment"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/project",
+                                        "id": "ieqb1"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Project"
                                         }
                                       ]
                                     }
@@ -659,7 +942,7 @@
                                 {
                                   "type": "text",
                                   "attributes": {
-                                    "id": "il6iz"
+                                    "id": "i2c9k"
                                   },
                                   "components": [
                                     {
@@ -673,14 +956,14 @@
                             {
                               "tagName": "main",
                               "attributes": {
-                                "id": "i2hxy"
+                                "id": "iuev4"
                               },
                               "components": [
                                 {
                                   "tagName": "h1",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "inqa5"
+                                    "id": "iredf"
                                   },
                                   "components": [
                                     {
@@ -693,7 +976,7 @@
                                   "tagName": "p",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "iebg8"
+                                    "id": "i8g3p"
                                   },
                                   "components": [
                                     {
@@ -705,6 +988,9 @@
                                 {
                                   "type": "table",
                                   "style": "",
+                                  "classes": [
+                                    "has-data-binding"
+                                  ],
                                   "attributes": {
                                     "chart-color": "#2c3e50",
                                     "chart-title": "TimeService List",
@@ -770,7 +1056,7 @@
                                 },
                                 {
                                   "attributes": {
-                                    "id": "izoxw"
+                                    "id": "i5wh3"
                                   },
                                   "components": [
                                     {
@@ -786,7 +1072,7 @@
                                         "data-method-class": "class_yj7pqh7vi_mw4zqmk6_dtb",
                                         "data-method": "method_ye0hlrs7f_mw4zqmk6_ih6",
                                         "data-instance-source": "table-timeservice-1",
-                                        "id": "io4p9"
+                                        "id": "iadlb"
                                       },
                                       "button-label": "+ getCurrentTime",
                                       "action-type": "run-method",
@@ -814,7 +1100,7 @@
                         "tagName": "html"
                       }
                     },
-                    "id": "tK3vedmVTVZSmpI3"
+                    "id": "WzUBFh271R440jnY"
                   }
                 ],
                 "id": "page-timeservice-1",
@@ -838,20 +1124,20 @@
                       "components": [
                         {
                           "attributes": {
-                            "id": "iw56c"
+                            "id": "ig01p"
                           },
                           "components": [
                             {
                               "tagName": "nav",
                               "attributes": {
-                                "id": "ib9zz"
+                                "id": "iwvbs"
                               },
                               "components": [
                                 {
                                   "tagName": "h2",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "ilzh8"
+                                    "id": "ipihh"
                                   },
                                   "components": [
                                     {
@@ -862,14 +1148,14 @@
                                 },
                                 {
                                   "attributes": {
-                                    "id": "inuei"
+                                    "id": "iazdl"
                                   },
                                   "components": [
                                     {
                                       "type": "link",
                                       "attributes": {
                                         "href": "/helloworld",
-                                        "id": "iaeu1"
+                                        "id": "i7ayc"
                                       },
                                       "components": [
                                         {
@@ -882,7 +1168,7 @@
                                       "type": "link",
                                       "attributes": {
                                         "href": "/timeservice",
-                                        "id": "iqf4k"
+                                        "id": "is2dk"
                                       },
                                       "components": [
                                         {
@@ -895,12 +1181,38 @@
                                       "type": "link",
                                       "attributes": {
                                         "href": "/veryimportantclass",
-                                        "id": "itva7"
+                                        "id": "ie4ft"
                                       },
                                       "components": [
                                         {
                                           "type": "textnode",
                                           "content": "veryImportantClass"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/appointment",
+                                        "id": "itpe4"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Appointment"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/project",
+                                        "id": "ih4mv"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Project"
                                         }
                                       ]
                                     }
@@ -909,7 +1221,7 @@
                                 {
                                   "type": "text",
                                   "attributes": {
-                                    "id": "iams9"
+                                    "id": "ii5xh"
                                   },
                                   "components": [
                                     {
@@ -923,14 +1235,14 @@
                             {
                               "tagName": "main",
                               "attributes": {
-                                "id": "igjlx"
+                                "id": "i079oa"
                               },
                               "components": [
                                 {
                                   "tagName": "h1",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "isy8l"
+                                    "id": "iqwusc"
                                   },
                                   "components": [
                                     {
@@ -943,7 +1255,7 @@
                                   "tagName": "p",
                                   "type": "text",
                                   "attributes": {
-                                    "id": "i2lpk"
+                                    "id": "io3qw8"
                                   },
                                   "components": [
                                     {
@@ -1059,11 +1371,609 @@
                         "tagName": "html"
                       }
                     },
-                    "id": "EPRf5A9iT2aPPGbj"
+                    "id": "imRbDTZ18D9ankHD"
                   }
                 ],
                 "id": "page-veryimportantclass-2",
                 "route_path": "/veryimportantclass"
+              },
+              {
+                "name": "Appointment",
+                "frames": [
+                  {
+                    "component": {
+                      "type": "wrapper",
+                      "stylable": [
+                        "background",
+                        "background-color",
+                        "background-image",
+                        "background-repeat",
+                        "background-attachment",
+                        "background-position",
+                        "background-size"
+                      ],
+                      "components": [
+                        {
+                          "attributes": {
+                            "id": "i7877g"
+                          },
+                          "components": [
+                            {
+                              "tagName": "nav",
+                              "attributes": {
+                                "id": "izufli"
+                              },
+                              "components": [
+                                {
+                                  "tagName": "h2",
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "iogi8a"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "BESSER"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "attributes": {
+                                    "id": "ietwse"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/helloworld",
+                                        "id": "ik0wd2"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "HelloWorld"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/timeservice",
+                                        "id": "i0494o"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "TimeService"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/veryimportantclass",
+                                        "id": "iuel4h"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "veryImportantClass"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/appointment",
+                                        "id": "irzcdt"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Appointment"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/project",
+                                        "id": "iprz57"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Project"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "im8prw"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "\u00a9 2026 BESSER. All rights reserved."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tagName": "main",
+                              "attributes": {
+                                "id": "i46pp1"
+                              },
+                              "components": [
+                                {
+                                  "tagName": "h1",
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "i41wd8"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Appointment"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tagName": "p",
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "idbwtf"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Manage Appointment data"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "table",
+                                  "style": "",
+                                  "classes": [
+                                    "has-data-binding"
+                                  ],
+                                  "attributes": {
+                                    "chart-color": "#2c3e50",
+                                    "chart-title": "Appointment List",
+                                    "data-source": "class_ypf6o2w6l_mwrsttyt_rxp",
+                                    "show-header": "true",
+                                    "striped-rows": "false",
+                                    "show-pagination": "true",
+                                    "rows-per-page": "5",
+                                    "action-buttons": "true",
+                                    "columns": [
+                                      {
+                                        "field": "name",
+                                        "label": "Name",
+                                        "columnType": "field",
+                                        "_expanded": false
+                                      },
+                                      {
+                                        "field": "description",
+                                        "label": "Description",
+                                        "columnType": "field",
+                                        "_expanded": false
+                                      },
+                                      {
+                                        "field": "type",
+                                        "label": "Type",
+                                        "columnType": "field",
+                                        "_expanded": false
+                                      },
+                                      {
+                                        "field": "startTime",
+                                        "label": "StartTime",
+                                        "columnType": "field",
+                                        "_expanded": false
+                                      },
+                                      {
+                                        "field": "endTime",
+                                        "label": "EndTime",
+                                        "columnType": "field",
+                                        "_expanded": false
+                                      },
+                                      {
+                                        "field": "Project",
+                                        "label": "Project",
+                                        "columnType": "lookup",
+                                        "lookupEntity": "class_xebn6s64u_mwrt3tm6_o9p",
+                                        "lookupField": "name",
+                                        "_expanded": false
+                                      }
+                                    ],
+                                    "id": "table-appointment-3",
+                                    "filter": ""
+                                  },
+                                  "chart-title": "Appointment List",
+                                  "data-source": "class_ypf6o2w6l_mwrsttyt_rxp",
+                                  "show-header": "true",
+                                  "striped-rows": "false",
+                                  "show-pagination": "true",
+                                  "action-buttons": "true",
+                                  "rows-per-page": "5",
+                                  "filter": "",
+                                  "columns": [
+                                    {
+                                      "field": "name",
+                                      "label": "Name",
+                                      "columnType": "field",
+                                      "_expanded": false
+                                    },
+                                    {
+                                      "field": "description",
+                                      "label": "Description",
+                                      "columnType": "field",
+                                      "_expanded": false
+                                    },
+                                    {
+                                      "field": "type",
+                                      "label": "Type",
+                                      "columnType": "field",
+                                      "_expanded": false
+                                    },
+                                    {
+                                      "field": "startTime",
+                                      "label": "StartTime",
+                                      "columnType": "field",
+                                      "_expanded": false
+                                    },
+                                    {
+                                      "field": "endTime",
+                                      "label": "EndTime",
+                                      "columnType": "field",
+                                      "_expanded": false
+                                    },
+                                    {
+                                      "field": "Project",
+                                      "label": "Project",
+                                      "columnType": "lookup",
+                                      "lookupEntity": "class_xebn6s64u_mwrt3tm6_o9p",
+                                      "lookupField": "name",
+                                      "_expanded": false
+                                    }
+                                  ],
+                                  "components": [
+                                    {
+                                      "type": "tbody",
+                                      "draggable": [
+                                        "table"
+                                      ],
+                                      "droppable": [
+                                        "tr"
+                                      ],
+                                      "components": [
+                                        {
+                                          "type": "row",
+                                          "draggable": [
+                                            "thead",
+                                            "tbody",
+                                            "tfoot"
+                                          ],
+                                          "droppable": [
+                                            "th",
+                                            "td"
+                                          ],
+                                          "classes": [
+                                            "row"
+                                          ],
+                                          "components": [
+                                            {
+                                              "type": "cell",
+                                              "draggable": [
+                                                "tr"
+                                              ],
+                                              "classes": [
+                                                "cell"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "chart-color": "#2c3e50"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "head": {
+                        "type": "head"
+                      },
+                      "docEl": {
+                        "tagName": "html"
+                      }
+                    },
+                    "id": "YTwTKGM4UtbLUGTb"
+                  }
+                ],
+                "id": "page-appointment-3",
+                "route_path": "/appointment"
+              },
+              {
+                "name": "Project",
+                "frames": [
+                  {
+                    "component": {
+                      "type": "wrapper",
+                      "stylable": [
+                        "background",
+                        "background-color",
+                        "background-image",
+                        "background-repeat",
+                        "background-attachment",
+                        "background-position",
+                        "background-size"
+                      ],
+                      "components": [
+                        {
+                          "attributes": {
+                            "id": "ijexzk"
+                          },
+                          "components": [
+                            {
+                              "tagName": "nav",
+                              "attributes": {
+                                "id": "iiy6uq"
+                              },
+                              "components": [
+                                {
+                                  "tagName": "h2",
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "iap6xa"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "BESSER"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "attributes": {
+                                    "id": "i6v32l"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/helloworld",
+                                        "id": "ipxk5h"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "HelloWorld"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/timeservice",
+                                        "id": "ieeryy"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "TimeService"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/veryimportantclass",
+                                        "id": "ikj25y"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "veryImportantClass"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/appointment",
+                                        "id": "ih9p02"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Appointment"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "link",
+                                      "attributes": {
+                                        "href": "/project",
+                                        "id": "iqc7km"
+                                      },
+                                      "components": [
+                                        {
+                                          "type": "textnode",
+                                          "content": "Project"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "irwddy"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "\u00a9 2026 BESSER. All rights reserved."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tagName": "main",
+                              "attributes": {
+                                "id": "inzyul"
+                              },
+                              "components": [
+                                {
+                                  "tagName": "h1",
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "iez091"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Project"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tagName": "p",
+                                  "type": "text",
+                                  "attributes": {
+                                    "id": "itj79d"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "textnode",
+                                      "content": "Manage Project data"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "table",
+                                  "style": "",
+                                  "classes": [
+                                    "has-data-binding"
+                                  ],
+                                  "attributes": {
+                                    "chart-color": "#2c3e50",
+                                    "chart-title": "Project List",
+                                    "data-source": "class_xebn6s64u_mwrt3tm6_o9p",
+                                    "show-header": "true",
+                                    "striped-rows": "false",
+                                    "show-pagination": "true",
+                                    "rows-per-page": "5",
+                                    "action-buttons": "true",
+                                    "columns": [
+                                      {
+                                        "field": "name",
+                                        "label": "Name",
+                                        "columnType": "field",
+                                        "_expanded": false
+                                      },
+                                      {
+                                        "field": "Appointment",
+                                        "label": "Appointment",
+                                        "columnType": "lookup",
+                                        "lookupEntity": "class_ypf6o2w6l_mwrsttyt_rxp",
+                                        "lookupField": "name",
+                                        "_expanded": false
+                                      }
+                                    ],
+                                    "id": "table-project-4",
+                                    "filter": ""
+                                  },
+                                  "chart-title": "Project List",
+                                  "data-source": "class_xebn6s64u_mwrt3tm6_o9p",
+                                  "show-header": "true",
+                                  "striped-rows": "false",
+                                  "show-pagination": "true",
+                                  "action-buttons": "true",
+                                  "rows-per-page": "5",
+                                  "filter": "",
+                                  "columns": [
+                                    {
+                                      "field": "name",
+                                      "label": "Name",
+                                      "columnType": "field",
+                                      "_expanded": false
+                                    },
+                                    {
+                                      "field": "Appointment",
+                                      "label": "Appointment",
+                                      "columnType": "lookup",
+                                      "lookupEntity": "class_ypf6o2w6l_mwrsttyt_rxp",
+                                      "lookupField": "name",
+                                      "_expanded": false
+                                    }
+                                  ],
+                                  "components": [
+                                    {
+                                      "type": "tbody",
+                                      "draggable": [
+                                        "table"
+                                      ],
+                                      "droppable": [
+                                        "tr"
+                                      ],
+                                      "components": [
+                                        {
+                                          "type": "row",
+                                          "draggable": [
+                                            "thead",
+                                            "tbody",
+                                            "tfoot"
+                                          ],
+                                          "droppable": [
+                                            "th",
+                                            "td"
+                                          ],
+                                          "classes": [
+                                            "row"
+                                          ],
+                                          "components": [
+                                            {
+                                              "type": "cell",
+                                              "draggable": [
+                                                "tr"
+                                              ],
+                                              "classes": [
+                                                "cell"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "chart-color": "#2c3e50"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "head": {
+                        "type": "head"
+                      },
+                      "docEl": {
+                        "tagName": "html"
+                      }
+                    },
+                    "id": "7tDVK9apKmBzQ4mW"
+                  }
+                ],
+                "id": "page-project-4",
+                "route_path": "/project"
               }
             ],
             "styles": [
@@ -1887,7 +2797,7 @@
               },
               {
                 "selectors": [
-                  "#ifb1q"
+                  "#i3kkp"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -1898,7 +2808,7 @@
               },
               {
                 "selectors": [
-                  "#i496y"
+                  "#itfpd"
                 ],
                 "style": {
                   "color": "white",
@@ -1912,7 +2822,7 @@
               },
               {
                 "selectors": [
-                  "#iwweq"
+                  "#il4dq"
                 ],
                 "style": {
                   "color": "white",
@@ -1926,7 +2836,7 @@
               },
               {
                 "selectors": [
-                  "#iga1x"
+                  "#ipws8"
                 ],
                 "style": {
                   "color": "white",
@@ -1940,7 +2850,35 @@
               },
               {
                 "selectors": [
-                  "#ix9wn"
+                  "#ickf7"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ix68j"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#i0z1q"
                 ],
                 "style": {
                   "display": "flex",
@@ -1950,7 +2888,7 @@
               },
               {
                 "selectors": [
-                  "#i1md4"
+                  "#iljjz"
                 ],
                 "style": {
                   "margin-top": "auto",
@@ -1963,7 +2901,7 @@
               },
               {
                 "selectors": [
-                  "#iqfs9"
+                  "#icmdy"
                 ],
                 "style": {
                   "width": "250px",
@@ -1977,7 +2915,7 @@
               },
               {
                 "selectors": [
-                  "#i4bdk"
+                  "#iye2h"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -1988,7 +2926,7 @@
               },
               {
                 "selectors": [
-                  "#i5tif"
+                  "#izhpj"
                 ],
                 "style": {
                   "color": "#666",
@@ -1997,7 +2935,16 @@
               },
               {
                 "selectors": [
-                  "#ip4bf"
+                  "#table-helloworld-0"
+                ],
+                "style": {
+                  "width": "100%",
+                  "min-height": "400px"
+                }
+              },
+              {
+                "selectors": [
+                  "#igjvg"
                 ],
                 "style": {
                   "display": "inline-flex",
@@ -2018,7 +2965,7 @@
               },
               {
                 "selectors": [
-                  "#ira6a"
+                  "#i8y3r"
                 ],
                 "style": {
                   "display": "inline-flex",
@@ -2039,7 +2986,7 @@
               },
               {
                 "selectors": [
-                  "#itm7g"
+                  "#ivzvh"
                 ],
                 "style": {
                   "margin-top": "20px",
@@ -2050,7 +2997,7 @@
               },
               {
                 "selectors": [
-                  "#id0ih"
+                  "#il4b3"
                 ],
                 "style": {
                   "flex": "1",
@@ -2061,7 +3008,7 @@
               },
               {
                 "selectors": [
-                  "#i8xfp"
+                  "#i8106"
                 ],
                 "style": {
                   "display": "flex",
@@ -2071,7 +3018,7 @@
               },
               {
                 "selectors": [
-                  "#ilebr"
+                  "#ih6ob"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -2082,7 +3029,7 @@
               },
               {
                 "selectors": [
-                  "#itbt8"
+                  "#iqaqf"
                 ],
                 "style": {
                   "color": "white",
@@ -2096,7 +3043,7 @@
               },
               {
                 "selectors": [
-                  "#iq62s"
+                  "#ihzvy"
                 ],
                 "style": {
                   "color": "white",
@@ -2110,7 +3057,7 @@
               },
               {
                 "selectors": [
-                  "#i9q7z"
+                  "#i44ec"
                 ],
                 "style": {
                   "color": "white",
@@ -2124,7 +3071,35 @@
               },
               {
                 "selectors": [
-                  "#i9rup"
+                  "#i2tjp"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ieqb1"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ic57j"
                 ],
                 "style": {
                   "display": "flex",
@@ -2134,7 +3109,7 @@
               },
               {
                 "selectors": [
-                  "#il6iz"
+                  "#i2c9k"
                 ],
                 "style": {
                   "margin-top": "auto",
@@ -2147,7 +3122,7 @@
               },
               {
                 "selectors": [
-                  "#iatl9"
+                  "#i8l3a"
                 ],
                 "style": {
                   "width": "250px",
@@ -2161,7 +3136,7 @@
               },
               {
                 "selectors": [
-                  "#inqa5"
+                  "#iredf"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -2172,7 +3147,7 @@
               },
               {
                 "selectors": [
-                  "#iebg8"
+                  "#i8g3p"
                 ],
                 "style": {
                   "color": "#666",
@@ -2190,7 +3165,7 @@
               },
               {
                 "selectors": [
-                  "#io4p9"
+                  "#iadlb"
                 ],
                 "style": {
                   "display": "inline-flex",
@@ -2211,7 +3186,7 @@
               },
               {
                 "selectors": [
-                  "#izoxw"
+                  "#i5wh3"
                 ],
                 "style": {
                   "margin-top": "20px",
@@ -2222,7 +3197,7 @@
               },
               {
                 "selectors": [
-                  "#i2hxy"
+                  "#iuev4"
                 ],
                 "style": {
                   "flex": "1",
@@ -2233,7 +3208,7 @@
               },
               {
                 "selectors": [
-                  "#i3vrc"
+                  "#iat5f"
                 ],
                 "style": {
                   "display": "flex",
@@ -2243,7 +3218,7 @@
               },
               {
                 "selectors": [
-                  "#ilzh8"
+                  "#ipihh"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -2254,7 +3229,7 @@
               },
               {
                 "selectors": [
-                  "#iaeu1"
+                  "#i7ayc"
                 ],
                 "style": {
                   "color": "white",
@@ -2268,7 +3243,7 @@
               },
               {
                 "selectors": [
-                  "#iqf4k"
+                  "#is2dk"
                 ],
                 "style": {
                   "color": "white",
@@ -2282,7 +3257,7 @@
               },
               {
                 "selectors": [
-                  "#itva7"
+                  "#ie4ft"
                 ],
                 "style": {
                   "color": "white",
@@ -2296,7 +3271,35 @@
               },
               {
                 "selectors": [
-                  "#inuei"
+                  "#itpe4"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ih4mv"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#iazdl"
                 ],
                 "style": {
                   "display": "flex",
@@ -2306,7 +3309,7 @@
               },
               {
                 "selectors": [
-                  "#iams9"
+                  "#ii5xh"
                 ],
                 "style": {
                   "margin-top": "auto",
@@ -2319,7 +3322,7 @@
               },
               {
                 "selectors": [
-                  "#ib9zz"
+                  "#iwvbs"
                 ],
                 "style": {
                   "width": "250px",
@@ -2333,7 +3336,7 @@
               },
               {
                 "selectors": [
-                  "#isy8l"
+                  "#iqwusc"
                 ],
                 "style": {
                   "margin-top": "0",
@@ -2344,7 +3347,7 @@
               },
               {
                 "selectors": [
-                  "#i2lpk"
+                  "#io3qw8"
                 ],
                 "style": {
                   "color": "#666",
@@ -2362,7 +3365,7 @@
               },
               {
                 "selectors": [
-                  "#igjlx"
+                  "#i079oa"
                 ],
                 "style": {
                   "flex": "1",
@@ -2373,7 +3376,343 @@
               },
               {
                 "selectors": [
-                  "#iw56c"
+                  "#ig01p"
+                ],
+                "style": {
+                  "display": "flex",
+                  "height": "100vh",
+                  "font-family": "Arial, sans-serif"
+                }
+              },
+              {
+                "selectors": [
+                  "#iogi8a"
+                ],
+                "style": {
+                  "margin-top": "0",
+                  "font-size": "24px",
+                  "margin-bottom": "30px",
+                  "font-weight": "bold"
+                }
+              },
+              {
+                "selectors": [
+                  "#ik0wd2"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#i0494o"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#iuel4h"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#irzcdt"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "rgba(255,255,255,0.2)",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#iprz57"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ietwse"
+                ],
+                "style": {
+                  "display": "flex",
+                  "flex-direction": "column",
+                  "flex": "1"
+                }
+              },
+              {
+                "selectors": [
+                  "#im8prw"
+                ],
+                "style": {
+                  "margin-top": "auto",
+                  "padding-top": "20px",
+                  "border-top": "1px solid rgba(255,255,255,0.2)",
+                  "font-size": "11px",
+                  "opacity": "0.8",
+                  "text-align": "center"
+                }
+              },
+              {
+                "selectors": [
+                  "#izufli"
+                ],
+                "style": {
+                  "width": "250px",
+                  "background": "linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)",
+                  "color": "white",
+                  "padding": "20px",
+                  "overflow-y": "auto",
+                  "display": "flex",
+                  "flex-direction": "column"
+                }
+              },
+              {
+                "selectors": [
+                  "#i41wd8"
+                ],
+                "style": {
+                  "margin-top": "0",
+                  "color": "#333",
+                  "font-size": "32px",
+                  "margin-bottom": "10px"
+                }
+              },
+              {
+                "selectors": [
+                  "#idbwtf"
+                ],
+                "style": {
+                  "color": "#666",
+                  "margin-bottom": "30px"
+                }
+              },
+              {
+                "selectors": [
+                  "#table-appointment-3"
+                ],
+                "style": {
+                  "width": "100%",
+                  "min-height": "400px"
+                }
+              },
+              {
+                "selectors": [
+                  "#i46pp1"
+                ],
+                "style": {
+                  "flex": "1",
+                  "padding": "40px",
+                  "overflow-y": "auto",
+                  "background": "#f5f5f5"
+                }
+              },
+              {
+                "selectors": [
+                  "#i7877g"
+                ],
+                "style": {
+                  "display": "flex",
+                  "height": "100vh",
+                  "font-family": "Arial, sans-serif"
+                }
+              },
+              {
+                "selectors": [
+                  "#iap6xa"
+                ],
+                "style": {
+                  "margin-top": "0",
+                  "font-size": "24px",
+                  "margin-bottom": "30px",
+                  "font-weight": "bold"
+                }
+              },
+              {
+                "selectors": [
+                  "#ipxk5h"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ieeryy"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ikj25y"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#ih9p02"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "transparent",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#iqc7km"
+                ],
+                "style": {
+                  "color": "white",
+                  "text-decoration": "none",
+                  "padding": "10px 15px",
+                  "display": "block",
+                  "background": "rgba(255,255,255,0.2)",
+                  "border-radius": "4px",
+                  "margin-bottom": "5px"
+                }
+              },
+              {
+                "selectors": [
+                  "#i6v32l"
+                ],
+                "style": {
+                  "display": "flex",
+                  "flex-direction": "column",
+                  "flex": "1"
+                }
+              },
+              {
+                "selectors": [
+                  "#irwddy"
+                ],
+                "style": {
+                  "margin-top": "auto",
+                  "padding-top": "20px",
+                  "border-top": "1px solid rgba(255,255,255,0.2)",
+                  "font-size": "11px",
+                  "opacity": "0.8",
+                  "text-align": "center"
+                }
+              },
+              {
+                "selectors": [
+                  "#iiy6uq"
+                ],
+                "style": {
+                  "width": "250px",
+                  "background": "linear-gradient(135deg, #4b3c82 0%, #5a3d91 100%)",
+                  "color": "white",
+                  "padding": "20px",
+                  "overflow-y": "auto",
+                  "display": "flex",
+                  "flex-direction": "column"
+                }
+              },
+              {
+                "selectors": [
+                  "#iez091"
+                ],
+                "style": {
+                  "margin-top": "0",
+                  "color": "#333",
+                  "font-size": "32px",
+                  "margin-bottom": "10px"
+                }
+              },
+              {
+                "selectors": [
+                  "#itj79d"
+                ],
+                "style": {
+                  "color": "#666",
+                  "margin-bottom": "30px"
+                }
+              },
+              {
+                "selectors": [
+                  "#table-project-4"
+                ],
+                "style": {
+                  "width": "100%",
+                  "min-height": "400px"
+                }
+              },
+              {
+                "selectors": [
+                  "#inzyul"
+                ],
+                "style": {
+                  "flex": "1",
+                  "padding": "40px",
+                  "overflow-y": "auto",
+                  "background": "#f5f5f5"
+                }
+              },
+              {
+                "selectors": [
+                  "#ijexzk"
                 ],
                 "style": {
                   "display": "flex",
@@ -2386,7 +3725,7 @@
             "symbols": [],
             "version": "0.21.13"
           },
-          "lastUpdate": "2026-11-13T10:15:05.330Z"
+          "lastUpdate": "2026-11-22T12:23:22.459Z"
         }
       ],
       "AgentDiagram": [
@@ -2462,9 +3801,41 @@
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-12T18:50:00Z"
       },
+      "attr_14j1w51bg_mwrsttyt_6c0": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T12:25:19Z"
+      },
+      "attr_3hhxh62ac_mwrt3tm6_vnv": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T12:25:19Z"
+      },
+      "attr_dt1aw7m65_mwrsttyt_kzk": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T12:25:19Z"
+      },
+      "attr_e7pyj6777_mwrsttyt_3yn": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T12:25:19Z"
+      },
+      "attr_js697j64q_mwrsttyt_mcg": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T12:25:19Z"
+      },
+      "attr_w5bpht84e_mwrsttyt_zpi": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T12:25:19Z"
+      },
+      "class_xebn6s64u_mwrt3tm6_o9p": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T12:25:19Z"
+      },
       "class_yj7pqh7vi_mw4zqmk6_dtb": {
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-06T13:18:40Z"
+      },
+      "class_ypf6o2w6l_mwrsttyt_rxp": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T12:25:19Z"
       },
       "method_q42piav36_mw4zqmk6_srk": {
         "addedBy": "fabsi-IDC",
@@ -2473,10 +3844,39 @@
       "method_ye0hlrs7f_mw4zqmk6_ih6": {
         "addedBy": "fabsi-IDC",
         "addedAt": "2026-11-06T13:18:40Z"
+      },
+      "rel_da1loiw4a_mwrt3tm7_avu": {
+        "addedBy": "fabsi-IDC",
+        "addedAt": "2026-11-22T12:25:19Z"
       }
+    },
+    "assistantConversation": {
+      "turns": [
+        {
+          "role": "assistant",
+          "content": "Opened your project linked to **fabsi\\-IDC\\/hello\\_world**, updated to the latest commit on `main`. Ask for any change and save it back to GitHub when you are happy."
+        },
+        {
+          "role": "user",
+          "content": "can you add a Class called \"Appointment\" which has a String field \"name\" and description that is optional, a String field \"type\" and a start and end time"
+        },
+        {
+          "role": "assistant",
+          "content": "Added the **Appointment** class with attributes: `name`, `description`, `type`, `startTime`, `endTime`. (applied 2 changes total)."
+        },
+        {
+          "role": "user",
+          "content": "can you add a Class called \"project\" where the class has a String field called \"name\" and a List with the type \"Appointment\"."
+        },
+        {
+          "role": "assistant",
+          "content": "Added the **Project** class with attributes: `name`. (applied 2 changes total)."
+        }
+      ],
+      "updatedAt": "2026-11-22T12:22:00.381Z"
     }
   },
-  "exportedAt": "2026-11-13T10:15:32.862Z",
+  "exportedAt": "2026-11-22T12:25:19.125Z",
   "version": "2.0.0",
   "editorVersion": "8.9.4"
 }
